@@ -1,14 +1,13 @@
 const CACHE_NAME = 'svenska-nyheter-images-v1';
 const MAX_AGE_SECONDS = 10 * 24 * 60 * 60; // 10 dagar
 
-// ── Annonsservrar som ALDRIG ska cachas ──────────────────────────────────────
 const AD_DOMAINS = [
     'doubleclick.net',
     'googlesyndication.com',
     'googleadservices.com',
     'adservice.google.com',
-    'adnxs.com',                 // AppNexus / Xandr
-    'adsrvr.org',                // The Trade Desk
+    'adnxs.com',
+    'adsrvr.org',
     'advertising.com',
     'ads.yahoo.com',
     'amazon-adsystem.com',
@@ -20,7 +19,7 @@ const AD_DOMAINS = [
     'rubiconproject.com',
     'pubmatic.com',
     'openx.net',
-    'casalemedia.com',           // Index Exchange
+    'casalemedia.com',
     'smartadserver.com',
     'adform.net',
     'tradedoubler.com',
@@ -29,10 +28,10 @@ const AD_DOMAINS = [
 ];
 
 function isAdRequest(url) {
-    return AD_DOMAINS.some(domain => url.hostname === domain || url.hostname.endsWith('.' + domain));
+    return AD_DOMAINS.some(domain =>
+        url.hostname === domain || url.hostname.endsWith('.' + domain)
+    );
 }
-
-// ────────────────────────────────────────────────────────────────────────────
 
 self.addEventListener('install', (event) => {
     self.skipWaiting();
@@ -53,23 +52,19 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
 
-    // Annonser — alltid Network-Only, aldrig cache
-    if (isAdRequest(url)) {
-        return; // låt webbläsaren hantera normalt utan service worker
-    }
+    // Annonser — aldrig cache
+    if (isAdRequest(url)) return;
 
-    // HTML-filer — alltid Network-Only så att senaste innehållet visas
-    const isHtml = event.request.destination === 'document' ||
-        url.pathname.endsWith('.html');
-    if (isHtml) {
-        return;
-    }
+    // HTML — aldrig cache
+    if (event.request.destination === 'document' || url.pathname.endsWith('.html')) return;
 
-    // Bilder — Cache-First med 10 dagars maxålder
-    const isImage = event.request.destination === 'image' ||
-        /\.(jpe?g|png|gif|webp|svg)(\?.*)?$/i.test(url.pathname);
+    // Endast same-origin bilder cachas (dina egna filer i pics/)
+    const isSameOrigin = url.origin === self.location.origin;
+    const isImage =
+        event.request.destination === 'image' ||
+        /\.(jpe?g|png|gif|webp|svg|avif)(\?.*)?$/i.test(url.pathname);
 
-    if (isImage) {
+    if (isImage && isSameOrigin) {
         event.respondWith(
             caches.open(CACHE_NAME).then((cache) =>
                 cache.match(event.request).then((cachedResponse) => {
@@ -88,39 +83,15 @@ self.addEventListener('fetch', (event) => {
             )
         );
     }
-    // Allt annat (fonter, manifest etc.) — webbläsaren hanterar normalt
+    // Cross-origin bilder — ignoreras av SW, webbläsarens HTTP-cache tar hand om dem
 });
 
-function guessContentType(url) {
-    const path = new URL(url).pathname.toLowerCase();
-    if (path.endsWith('.png'))  return 'image/png';
-    if (path.endsWith('.gif'))  return 'image/gif';
-    if (path.endsWith('.webp')) return 'image/webp';
-    if (path.endsWith('.svg'))  return 'image/svg+xml';
-    if (path.endsWith('.avif')) return 'image/avif';
-    return 'image/jpeg'; // fallback för .jpg/.jpeg och okända
-}
-
 function fetchAndCache(cache, request) {
-    const isCrossOrigin = new URL(request.url).origin !== self.location.origin;
-    const fetchRequest = isCrossOrigin
-        ? new Request(request.url, { mode: 'no-cors', credentials: 'omit' })
-        : request;
-
-    return fetch(fetchRequest).then((networkResponse) => {
-        if (networkResponse && (networkResponse.status === 200 || networkResponse.type === 'opaque')) {
+    return fetch(request).then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+            const headers = new Headers(networkResponse.headers);
+            headers.set('sw-cached-date', new Date().toUTCString());
             return networkResponse.clone().blob().then((body) => {
-                const headers = new Headers();
-
-                // Bevara Content-Type — använd original om tillgänglig, annars gissa från URL
-                const originalType = networkResponse.headers.get('content-type');
-                const contentType = (originalType && originalType.startsWith('image/'))
-                    ? originalType
-                    : guessContentType(request.url);
-
-                headers.set('content-type', contentType);
-                headers.set('sw-cached-date', new Date().toUTCString());
-
                 const responseToCache = new Response(body, {
                     status: 200,
                     statusText: 'OK',
@@ -135,4 +106,3 @@ function fetchAndCache(cache, request) {
         return new Response('', { status: 408 });
     });
 }
-
