@@ -92,14 +92,21 @@ self.addEventListener('fetch', (event) => {
 });
 
 function fetchAndCache(cache, request) {
-    return fetch(request).then((networkResponse) => {
-        if (networkResponse && networkResponse.status === 200) {
-            const headers = new Headers(networkResponse.headers);
+    // Använd no-cors för cross-origin bilder
+    const fetchRequest = new Request(request.url, {
+        mode: 'no-cors',
+        credentials: 'omit'
+    });
+
+    return fetch(fetchRequest).then((networkResponse) => {
+        // no-cors ger en "opaque" response (status = 0) — det är normalt
+        if (networkResponse && (networkResponse.status === 200 || networkResponse.type === 'opaque')) {
+            const headers = new Headers();
             headers.set('sw-cached-date', new Date().toUTCString());
             return networkResponse.clone().blob().then((body) => {
                 const responseToCache = new Response(body, {
-                    status: networkResponse.status,
-                    statusText: networkResponse.statusText,
+                    status: 200,
+                    statusText: 'OK',
                     headers: headers,
                 });
                 cache.put(request, responseToCache.clone());
@@ -111,3 +118,4 @@ function fetchAndCache(cache, request) {
         return new Response('', { status: 408 });
     });
 }
+
