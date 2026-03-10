@@ -91,19 +91,36 @@ self.addEventListener('fetch', (event) => {
     // Allt annat (fonter, manifest etc.) — webbläsaren hanterar normalt
 });
 
+function guessContentType(url) {
+    const path = new URL(url).pathname.toLowerCase();
+    if (path.endsWith('.png'))  return 'image/png';
+    if (path.endsWith('.gif'))  return 'image/gif';
+    if (path.endsWith('.webp')) return 'image/webp';
+    if (path.endsWith('.svg'))  return 'image/svg+xml';
+    if (path.endsWith('.avif')) return 'image/avif';
+    return 'image/jpeg'; // fallback för .jpg/.jpeg och okända
+}
+
 function fetchAndCache(cache, request) {
-    // Använd no-cors för cross-origin bilder
-    const fetchRequest = new Request(request.url, {
-        mode: 'no-cors',
-        credentials: 'omit'
-    });
+    const isCrossOrigin = new URL(request.url).origin !== self.location.origin;
+    const fetchRequest = isCrossOrigin
+        ? new Request(request.url, { mode: 'no-cors', credentials: 'omit' })
+        : request;
 
     return fetch(fetchRequest).then((networkResponse) => {
-        // no-cors ger en "opaque" response (status = 0) — det är normalt
         if (networkResponse && (networkResponse.status === 200 || networkResponse.type === 'opaque')) {
-            const headers = new Headers();
-            headers.set('sw-cached-date', new Date().toUTCString());
             return networkResponse.clone().blob().then((body) => {
+                const headers = new Headers();
+
+                // Bevara Content-Type — använd original om tillgänglig, annars gissa från URL
+                const originalType = networkResponse.headers.get('content-type');
+                const contentType = (originalType && originalType.startsWith('image/'))
+                    ? originalType
+                    : guessContentType(request.url);
+
+                headers.set('content-type', contentType);
+                headers.set('sw-cached-date', new Date().toUTCString());
+
                 const responseToCache = new Response(body, {
                     status: 200,
                     statusText: 'OK',
