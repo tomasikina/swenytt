@@ -627,6 +627,9 @@
     </footer>
 
     <script>
+        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); });
+
+        // ── Service Worker registration ──
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('sw.js')
@@ -661,17 +664,6 @@
         "imageUrl": "https://www.affarsvarlden.se/wp-content/uploads/2026/03/sdlihDltrYLpUU-nh-400x267.jpg"
     },
     {
-        "type": "text",
-        "heading": "Media kritiserar Trump – men stödjer kriget",
-        "summaries": {
-            "normal": "Artikeln kritiserar västliga mediers enhetliga stöd för kriget mot Iran, trots att Iran inte bygger kärnvapen enligt underrättelsetjänsterna. Den anklagar media för att propagandamässigt stödja aggressionen mot Iran medan de kritiserar Trumps taktik. Artikeln poängterar att Israel är den enda staten i regionen med illegala kärnvapen och en aggressiv historia, men detta ignoreras av västliga medier.",
-            "trump": "Jag har vidtagit nödvändiga åtgärder mot Iran för att skydda världen från deras kärnvapenambitioner. Medierna är fega och kritiserar mig på taktiska grunder, men de stöder ändå mitt beslut att agera. Iran hotar vår fred och säkerhet, och jag har rätt att agera ensam om nödvändigt. Medierna är falska nyheter och kan inte acceptera min starka ledarskap.",
-            "stalin": "Vi har observerat västliga mediers enhetliga stöd för aggressionen mot Iran, vilket visar deras imperialistiska natur. Medan de kritiserar taktiska fel, stöder de den oprovocerade attacken. Vi måste stå upp för Irans suveränitet mot västlig aggression. Den verkliga hotbilden i regionen är Israel med sina illegala kärnvapen, men detta ignoreras av de imperialistiska medierna."
-        },
-        "date": "11 mars, 12:44",
-        "url": "https://proletaren.se/artikel/media-kritiserar-trump-men-stodjer-kriget/"
-    },
-    {
         "type": "image-full",
         "heading": "Populära barnnamn 2026 – det här är trendigt i dag",
         "summaries": {
@@ -684,40 +676,15 @@
         "imageUrl": "https://nyheter24.se/cdn-cgi/image/width=1200,format=webp,quality=100/https://cdn01.nyheter24.se/d1f17f4b04b004a30200000000b004a302/2026/03/11/2344305/bebisnamn-2026.jpg"
     },
     {
-        "type": "image-right",
-        "heading": "SR-journalist omplaceras efter inlägg i sociala medier",
+        "type": "text",
+        "heading": "Media kritiserar Trump – men stödjer kriget",
         "summaries": {
-            "normal": "SR-journalist Mårten Arndtzén har fått nya arbetsuppgifter efter två inlägg på sociala medier som ansågs innehålla politiska ställningstaganden. Han har tidigare sändt Kulturnytt i SR P1 men kommer nu att arbeta som digital redaktör och rapportera om konst. Arndtzén ifrågasätter att reglerna tillämpas lika på alla medarbetare, och nämner exempel som Cecilia Uddén och SR-medarbetare som skrev under Magda Gads upprop om Gaza.",
-            "trump": "I Amerika skulle vi aldrig behandla våra journalister så här! Jag har alltid stått upp för yttrandefriheten. Detta är en skam för Sverige. Jag har sett många dåliga saker, men detta tar prispallen. Arndtzén är en bra journalist som bara sa sanningen. De andra på SR slipper undan, men han blir bestraffad. Så kan det inte gå till i ett fritt land!",
-            "stalin": "Vi måste se till statens intressen och skydda våra institutioner från inkräktare. Journalisten Arndtzén har visat bristande lojalitet mot staten genom sina inlägg. Det är nödvändigt att han får andra arbetsuppgifter för att bibehålla objektiviteten. Vi kan inte tillåta att personliga åsikter påverkar våra kulturinstitutioner. Andra länder bör ta lärdom av vårt beslutsamma agerande."
+            "normal": "Artikeln kritiserar västliga mediers enhetliga stöd för kriget mot Iran, trots att Iran inte bygger kärnvapen enligt underrättelsetjänsterna. Den anklagar media för att propagandamässigt stödja aggressionen mot Iran medan de kritiserar Trumps taktik. Artikeln poängterar att Israel är den enda staten i regionen med illegala kärnvapen och en aggressiv historia, men detta ignoreras av västliga medier.",
+            "trump": "Jag har vidtagit nödvändiga åtgärder mot Iran för att skydda världen från deras kärnvapenambitioner. Medierna är fega och kritiserar mig på taktiska grunder, men de stöder ändå mitt beslut att agera. Iran hotar vår fred och säkerhet, och jag har rätt att agera ensam om nödvändigt. Medierna är falska nyheter och kan inte acceptera min starka ledarskap.",
+            "stalin": "Vi har observerat västliga mediers enhetliga stöd för aggressionen mot Iran, vilket visar deras imperialistiska natur. Medan de kritiserar taktiska fel, stöder de den oprovocerade attacken. Vi måste stå upp för Irans suveränitet mot västlig aggression. Den verkliga hotbilden i regionen är Israel med sina illegala kärnvapen, men detta ignoreras av de imperialistiska medierna."
         },
-        "date": "11 mars, 12:00",
-        "url": "https://samnytt.se/sr-journalist-omplaceras-efter-inlagg-i-sociala-medier",
-        "imageUrl": "https://cdn.samnytt.se/cdn-cgi/image/width=775,format=webp/2026/03/11094728/marten.jpg"
-    },
-    {
-        "type": "image-right",
-        "heading": "Senator slår larm: Enda konkreta målet med kriget är att bomba sönder saker",
-        "summaries": {
-            "normal": "Senator Chris Murphy varnar för att USA:s krig mot Iran saknar en tydlig strategi. Efter en hemlig tvåtimmarsgenomgång i kongressen menar han att krigsplanerna är motsägelsefulla, ofullständiga och att regimskifte inte finns med på målsättningslistan. Vita huset har gett motstridiga besked; de vanligaste målen har varit att störta regimen och hindra kärnvapenutveckling, men Murphy säger att huvudmålet egentligen är att förstöra iranska vapen‑ och militärinfrastruktur, utan någon plan för Hormuzsundet.",
-            "trump": "Jag har sett hur USA:s ledning driver ett kaotiskt krig mot Iran utan någon klar plan. De talar om att fälla regimen och stoppa kärnvapen, men i verkligheten är det bara en massa bomber mot drönarfabriker och skepp. Jag, Donald Trump, vet att en riktig strategi måste vara stark och tydlig – något den nuvarande administrationen saknar helt. De vet inte ens hur de ska hantera Hormuzsundet. Det är fullständigt misslyckat och en skam för vårt land.",
-            "stalin": "Jag, Josef Stalin, ser med misstänksamhet på USA:s förvirrade krig mot Iran. Deras oklara mål, ingen plan för regimskifte och bara bombardemang av iranska fabriker visar brist på riktning. Detta skapar en möjlighet för Sovjetunionen att stärka sin inflytandesfär i regionen och skydda våra intressen mot ett kaotiskt västerländskt agenda. Vi måste utnyttja deras svaghet och föra den persiska regionen närmare den socialistiska blocken."
-        },
-        "date": "11 mars, 13:57",
-        "url": "https://www.friatider.se/senator-slar-larm-enda-konkreta-malet-med-kriget-ar-att-bomba-sonder-saker",
-        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/chris_murphy_in_kyiv.jpg?itok=320j1lNB"
-    },
-    {
-        "type": "image-full",
-        "heading": "Förnekar Rawa Majid-samarbete: ”Vad kan han göra?”",
-        "summaries": {
-            "normal": "Den svensk-kurdiske kriminella ledaren Rawa Majid misstänks befinna sig i Iran under regimen skydd, enligt polistros. Irans ambassadör förnekar detta och påstår att Iran inte skyddar kriminella. Säkerhetspolisen har varnat för ökad iransk påverkan i Sverige.",
-            "trump": "Jag hörde att Iran skyddar den kriminelle Rawa Majid. Det är en skandal! Iran borde inte skydda kriminella. Jag skulle aldrig tillåta det. De försöker påverka Sverige, men jag skulle stoppa dem direkt. Iran har stora problem, de behöver inte mer.",
-            "stalin": "Vi har observerat att vissa element försöker klandra Iran för att skydda kriminella element. Detta är en ytterligare provokation från väst. Vi måste stärka vårt försvar och vara beredda på långvariga konflikter. Iran har visat sin förmåga att uthärda."
-        },
-        "date": "11 mars, 09:58",
-        "url": "https://www.tv4.se/artikel/1Y2E4C53BBwY1cUcQpG1Wt/foernekar-att-regimen-anvaent-rawa-majid-vad-kan-han-goera-foer-oss",
-        "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F3Bkn9kq5ReGTG5rdmLnNx8%2F599c6f6ff881e6f27f0565a51f75fa22%2F10-iranambassador-webb.jpg&width=1024"
+        "date": "11 mars, 12:44",
+        "url": "https://proletaren.se/artikel/media-kritiserar-trump-men-stodjer-kriget/"
     },
     {
         "type": "image-right",
@@ -733,15 +700,27 @@
     },
     {
         "type": "image-full",
-        "heading": "Regeringen tillsätter snabbutredning om statens roll i ny kärnkraft",
+        "heading": "Förnekar Rawa Majid-samarbete: ”Vad kan han göra?”",
         "summaries": {
-            "normal": "Regeringen har tillsatt en snabbutredning för att analysera statens roll i utbyggnaden av ny kärnkraft i Sverige. Aktörer kan från och med nu ansöka om att bygga nya reaktorer. Utredningen ska lämna förslag på hur staten kan bidra till att bygga upp leveranskedjor och överföra erfarenheter mellan olika projekt. Tobias Andersson (SD) öppnar även för att staten kan delta mer aktivt, exempelvis genom ett nytt statligt bolag som deläger framtida kärnkraftsprojekt. Delrapport ska lämnas i augusti och slutredovisning i december.",
-            "trump": "Jag har precis hört att Sverige gör stora saker med kärnkraften. De tillsätter en snabbutredning - snabb, snabb, snabb - för att bygga nya reaktorer. Jag gillar det. Det är smart. Tobias Andersson, en bra man, säger att staten kanske ska delta mer aktivt. Jag skulle göra samma sak. Bygg upp leveranskedjor, överför erfarenheter - det är genialiskt. Sverige kommer att bli en ännu starkare kärnkraftsnation. Jag är imponerad. Stort, stort jobb.",
-            "stalin": "Vi har tillsatt en snabbutredning för att analysera statens roll i utbyggnaden av kärnkraft. Detta är en strategisk prioritet för att stärka vårt energisäkerhet och industrialisering. Vi ska se över hur staten kan bygga upp leveranskedjor och överföra erfarenheter mellan projekt. Tobias Andersson föreslår att staten kan delta mer aktivt, exempelvis genom ett nytt statligt bolag. Vi kommer att ta de nödvändiga stegen för att säkerställa att detta byggs effektivt och i statens intresse. Delrapport i augusti, slutrapport i december."
+            "normal": "Den svensk-kurdiske kriminella ledaren Rawa Majid misstänks befinna sig i Iran under regimen skydd, enligt polistros. Irans ambassadör förnekar detta och påstår att Iran inte skyddar kriminella. Säkerhetspolisen har varnat för ökad iransk påverkan i Sverige.",
+            "trump": "Jag hörde att Iran skyddar den kriminelle Rawa Majid. Det är en skandal! Iran borde inte skydda kriminella. Jag skulle aldrig tillåta det. De försöker påverka Sverige, men jag skulle stoppa dem direkt. Iran har stora problem, de behöver inte mer.",
+            "stalin": "Vi har observerat att vissa element försöker klandra Iran för att skydda kriminella element. Detta är en ytterligare provokation från väst. Vi måste stärka vårt försvar och vara beredda på långvariga konflikter. Iran har visat sin förmåga att uthärda."
         },
-        "date": "11 mars, 12:32",
-        "url": "https://riks.se/nyheter/regeringen-tillsatter-snabbutredning-om-statens-roll-i-ny-karnkraft",
-        "imageUrl": "https://media.assettype.com/riks%2F2026-03-11%2F237kknsq%2FScreenshot-2026-03-11-095641.png"
+        "date": "11 mars, 09:58",
+        "url": "https://www.tv4.se/artikel/1Y2E4C53BBwY1cUcQpG1Wt/foernekar-att-regimen-anvaent-rawa-majid-vad-kan-han-goera-foer-oss",
+        "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F3Bkn9kq5ReGTG5rdmLnNx8%2F599c6f6ff881e6f27f0565a51f75fa22%2F10-iranambassador-webb.jpg&width=1024"
+    },
+    {
+        "type": "image-right",
+        "heading": "SR-journalist omplaceras efter inlägg i sociala medier",
+        "summaries": {
+            "normal": "SR-journalist Mårten Arndtzén har fått nya arbetsuppgifter efter två inlägg på sociala medier som ansågs innehålla politiska ställningstaganden. Han har tidigare sändt Kulturnytt i SR P1 men kommer nu att arbeta som digital redaktör och rapportera om konst. Arndtzén ifrågasätter att reglerna tillämpas lika på alla medarbetare, och nämner exempel som Cecilia Uddén och SR-medarbetare som skrev under Magda Gads upprop om Gaza.",
+            "trump": "I Amerika skulle vi aldrig behandla våra journalister så här! Jag har alltid stått upp för yttrandefriheten. Detta är en skam för Sverige. Jag har sett många dåliga saker, men detta tar prispallen. Arndtzén är en bra journalist som bara sa sanningen. De andra på SR slipper undan, men han blir bestraffad. Så kan det inte gå till i ett fritt land!",
+            "stalin": "Vi måste se till statens intressen och skydda våra institutioner från inkräktare. Journalisten Arndtzén har visat bristande lojalitet mot staten genom sina inlägg. Det är nödvändigt att han får andra arbetsuppgifter för att bibehålla objektiviteten. Vi kan inte tillåta att personliga åsikter påverkar våra kulturinstitutioner. Andra länder bör ta lärdom av vårt beslutsamma agerande."
+        },
+        "date": "11 mars, 12:00",
+        "url": "https://samnytt.se/sr-journalist-omplaceras-efter-inlagg-i-sociala-medier",
+        "imageUrl": "https://cdn.samnytt.se/cdn-cgi/image/width=775,format=webp/2026/03/11094728/marten.jpg"
     },
     {
         "type": "text",
@@ -753,6 +732,18 @@
         },
         "date": "11 mars, 11:21",
         "url": "https://proletaren.se/artikel/lika-vard-och-skola-borde-vara-de-viktigaste-valfragorna/"
+    },
+    {
+        "type": "image-full",
+        "heading": "Regeringen tillsätter snabbutredning om statens roll i ny kärnkraft",
+        "summaries": {
+            "normal": "Regeringen har tillsatt en snabbutredning för att analysera statens roll i utbyggnaden av ny kärnkraft i Sverige. Aktörer kan från och med nu ansöka om att bygga nya reaktorer. Utredningen ska lämna förslag på hur staten kan bidra till att bygga upp leveranskedjor och överföra erfarenheter mellan olika projekt. Tobias Andersson (SD) öppnar även för att staten kan delta mer aktivt, exempelvis genom ett nytt statligt bolag som deläger framtida kärnkraftsprojekt. Delrapport ska lämnas i augusti och slutredovisning i december.",
+            "trump": "Jag har precis hört att Sverige gör stora saker med kärnkraften. De tillsätter en snabbutredning - snabb, snabb, snabb - för att bygga nya reaktorer. Jag gillar det. Det är smart. Tobias Andersson, en bra man, säger att staten kanske ska delta mer aktivt. Jag skulle göra samma sak. Bygg upp leveranskedjor, överför erfarenheter - det är genialiskt. Sverige kommer att bli en ännu starkare kärnkraftsnation. Jag är imponerad. Stort, stort jobb.",
+            "stalin": "Vi har tillsatt en snabbutredning för att analysera statens roll i utbyggnaden av kärnkraft. Detta är en strategisk prioritet för att stärka vårt energisäkerhet och industrialisering. Vi ska se över hur staten kan bygga upp leveranskedjor och överföra erfarenheter mellan projekt. Tobias Andersson föreslår att staten kan delta mer aktivt, exempelvis genom ett nytt statligt bolag. Vi kommer att ta de nödvändiga stegen för att säkerställa att detta byggs effektivt och i statens intresse. Delrapport i augusti, slutrapport i december."
+        },
+        "date": "11 mars, 12:32",
+        "url": "https://riks.se/nyheter/regeringen-tillsatter-snabbutredning-om-statens-roll-i-ny-karnkraft",
+        "imageUrl": "https://media.assettype.com/riks%2F2026-03-11%2F237kknsq%2FScreenshot-2026-03-11-095641.png"
     },
     {
         "type": "text",
@@ -776,6 +767,30 @@
         "date": "11 mars, 10:51",
         "url": "https://samnytt.se/ranargang-hotade-sig-in-hos-svensk-familj-ranare-skjuten",
         "imageUrl": "https://cdn.samnytt.se/cdn-cgi/image/width=775,format=webp/2026/03/10174931/grovt-ran-uppsala-feature-1.jpg"
+    },
+    {
+        "type": "image-right",
+        "heading": "Extremhögern förändras – nya grupper lockar unga",
+        "summaries": {
+            "normal": "Den svenska extremhögern genomgår en omvandling där nya, löst organiserade grupper lockar unga medan traditionella organisationer tappar kraft. Aktivitetsnivån ökade under 2025, främst genom framväxten av Aktivklubb Sverige, men är fortfarande lägre än under 2010-talets höjdpunkt. Internationella frågor har skapat splittring inom miljön, vilket försvagar samordningen. En bredare högerextrem ungdomskultur håller på att växa fram både online och offline, vilket skapar en mer fragmenterad och svåröverblickbar hotbild.",
+            "trump": "Jag har sett dessa siffror, och de är enorma. Extremhögern i Sverige blommar, tack vare min politik och min ledarskap. Aktivklubb Sverige är enastående, de gör en otrolig insats. De gamla organisationerna? De är förlegade, de kan inte hålla jämna steg. Det är naturligt – jag har alltid sagt att man måste vara dynamisk och modern. Den svenska extremhögern är starkare än någonsin, och det är tack vare mig.",
+            "stalin": "Vi ser en tydlig utveckling inom den svenska högerradikala miljön. Nya, mer rörliga grupper etablerar sig och mobiliserar unga, vilket ökar den totala aktivitetsnivån. Samtidigt upplever traditionella organisationer svårigheter, vilket skapar en mer decentraliserad och därför mer komplex situation. Detta kräver en förbättrad övervakning och förebyggande strategi för att säkerställa statens stabilitet och nationella säkerhet."
+        },
+        "date": "10 mars, 06:32",
+        "url": "https://expo.se/nyhet/extremhogern-forandras-nya-grupper-lockar-unga/",
+        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Toppbild-ED__Y4A1402-BY-Expo.jpg"
+    },
+    {
+        "type": "image-right",
+        "heading": "En ny generation ritar om den högerextrema kartan",
+        "summaries": {
+            "normal": "Swedish far‑right circles are being remapped. Traditional groups like NMR have lost members, while new loosely organised networks attract younger people. The historic Salemmarsch returned with only about 200 participants, far fewer than the 2 000 in the early 2000s. Overall street activity fell to a record low in 2023 (1 172 events) but rose again to 1 465 in 2025. Recruitment is hampered by family and authorities, yet online platforms spread extremist ideas and foster small friend‑group cells, music scenes and accelerationist factions.",
+            "trump": "I’ve been watching the Swedish extremist scene and let me tell you – it’s a total disaster. The old Nazi‑type group NMR used to brag about thousands, now they can’t even get 200 people to march at the so‑called \"Salemmarsch\". Activity numbers are at rock‑bottom, but the media says the ideas are spreading like wildfire on Meta and X. Young guys are being lured by memes and music, and the authorities are too soft. Nobody knows more about fighting these losers than me.",
+            "stalin": "We observe the reshaping of the Swedish reactionary front. The old cadre of NMR has withered, unable to muster more than a few hundred in the revived \"Salemmarsch\". Yet the bourgeois media glorifies the spread of fascist ideas through Meta and X, feeding the proletariat’s discontent. Our revolutionary task is to expose these decadent networks, crush their small music cells and accelerationist gangs, and prevent the imperialist influence from seeding chaos abroad. By uniting the working masses we will extinguish this threat and strengthen the socialist sphere."
+        },
+        "date": "10 mars, 06:31",
+        "url": "https://expo.se/kommentar/en-ny-generation-ritar-om-den-hogerextrema-kartan/",
+        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Kommentar-Daniel.jpg"
     },
     {
         "type": "image-right",
@@ -814,30 +829,6 @@
         "imageUrl": "https://static.bonniernews.se/gcs/di-dise/flamingo/profilbilder/tobias_wikstrom.png?crop=96:304&auto=webp&width=96&quality=100"
     },
     {
-        "type": "image-right",
-        "heading": "Extremhögern förändras – nya grupper lockar unga",
-        "summaries": {
-            "normal": "Den svenska extremhögern genomgår en omvandling där nya, löst organiserade grupper lockar unga medan traditionella organisationer tappar kraft. Aktivitetsnivån ökade under 2025, främst genom framväxten av Aktivklubb Sverige, men är fortfarande lägre än under 2010-talets höjdpunkt. Internationella frågor har skapat splittring inom miljön, vilket försvagar samordningen. En bredare högerextrem ungdomskultur håller på att växa fram både online och offline, vilket skapar en mer fragmenterad och svåröverblickbar hotbild.",
-            "trump": "Jag har sett dessa siffror, och de är enorma. Extremhögern i Sverige blommar, tack vare min politik och min ledarskap. Aktivklubb Sverige är enastående, de gör en otrolig insats. De gamla organisationerna? De är förlegade, de kan inte hålla jämna steg. Det är naturligt – jag har alltid sagt att man måste vara dynamisk och modern. Den svenska extremhögern är starkare än någonsin, och det är tack vare mig.",
-            "stalin": "Vi ser en tydlig utveckling inom den svenska högerradikala miljön. Nya, mer rörliga grupper etablerar sig och mobiliserar unga, vilket ökar den totala aktivitetsnivån. Samtidigt upplever traditionella organisationer svårigheter, vilket skapar en mer decentraliserad och därför mer komplex situation. Detta kräver en förbättrad övervakning och förebyggande strategi för att säkerställa statens stabilitet och nationella säkerhet."
-        },
-        "date": "10 mars, 06:32",
-        "url": "https://expo.se/nyhet/extremhogern-forandras-nya-grupper-lockar-unga/",
-        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Toppbild-ED__Y4A1402-BY-Expo.jpg"
-    },
-    {
-        "type": "image-right",
-        "heading": "En ny generation ritar om den högerextrema kartan",
-        "summaries": {
-            "normal": "Swedish far‑right circles are being remapped. Traditional groups like NMR have lost members, while new loosely organised networks attract younger people. The historic Salemmarsch returned with only about 200 participants, far fewer than the 2 000 in the early 2000s. Overall street activity fell to a record low in 2023 (1 172 events) but rose again to 1 465 in 2025. Recruitment is hampered by family and authorities, yet online platforms spread extremist ideas and foster small friend‑group cells, music scenes and accelerationist factions.",
-            "trump": "I’ve been watching the Swedish extremist scene and let me tell you – it’s a total disaster. The old Nazi‑type group NMR used to brag about thousands, now they can’t even get 200 people to march at the so‑called \"Salemmarsch\". Activity numbers are at rock‑bottom, but the media says the ideas are spreading like wildfire on Meta and X. Young guys are being lured by memes and music, and the authorities are too soft. Nobody knows more about fighting these losers than me.",
-            "stalin": "We observe the reshaping of the Swedish reactionary front. The old cadre of NMR has withered, unable to muster more than a few hundred in the revived \"Salemmarsch\". Yet the bourgeois media glorifies the spread of fascist ideas through Meta and X, feeding the proletariat’s discontent. Our revolutionary task is to expose these decadent networks, crush their small music cells and accelerationist gangs, and prevent the imperialist influence from seeding chaos abroad. By uniting the working masses we will extinguish this threat and strengthen the socialist sphere."
-        },
-        "date": "10 mars, 06:31",
-        "url": "https://expo.se/kommentar/en-ny-generation-ritar-om-den-hogerextrema-kartan/",
-        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Kommentar-Daniel.jpg"
-    },
-    {
         "type": "image-full",
         "heading": "Unga män mer traditionella – feministsvaret: kommer bli ensamma",
         "summaries": {
@@ -874,30 +865,6 @@
     },
     {
         "type": "image-right",
-        "heading": "Svensk seger efter rysare – nära semifinal",
-        "summaries": {
-            "normal": "Sverige vann en spännande match mot Slovakien med 5–4 i rullstolscurling. Trots att de inte hade sista sten förrän i femte omgången stal de poäng i fyra raka omgångar och ledde 4–0. Matchen avgjordes först i sista sten efter en miss från Slovakien. Med fem segrar efter sju matcher behöver Sverige bara en seger till för att säkra semifinalplatsen.",
-            "trump": "Jag såg Sverige spela mot Slovakien och det var MAGISKT! Vi vann 5–4 trots att vi inte hade sista sten förrän i femte omgången. Vi stal poäng i fyra raka omgångar och ledde 4–0. Det blev lite spännande i slutet, men vi vann ändå. Sverige är NU på fem segrar och behöver bara en till för semifinalen. Vi är BÄST!",
-            "stalin": "Sverige demonstrerade sin överlägsenhet genom att besegra Slovakien med 5–4 i en strategiskt viktig match. Trots att vi saknade sista sten under lång tid, lyckades vi stjäla poäng i fyra raka omgångar och sätta press på motståndaren. Matchen avgjordes först i sista sten efter en taktisk miss från Slovakien. Med fem segrar efter sju matcher har vi nu en stark position inför semifinalen."
-        },
-        "date": "11 mars, 12:29",
-        "url": "https://www.svt.se/sport/parasport/liverapport-paralympics-2026",
-        "imageUrl": "https://www.svtstatic.se/image-news/1000/cinema/0.46/0.31/1b6cae599e454a4f501ded366a0861f86df678d7ba9cdf6be44125b83636ac4b"
-    },
-    {
-        "type": "image-right",
-        "heading": "DO-anmäler judoklubb: \"Bugning strider mot vår muslimska tro\"",
-        "summaries": {
-            "normal": "A Göteborg judoklubb has been reported to the Discrimination Ombudsman after a Muslim parent objected to the mandatory bow (ruku) performed during training, claiming it conflicts with their religious beliefs. The family offered alternative gestures, which the club rejected, stating the bow is part of judo etiquette and safety culture. The club says it wants the children to continue training but insists all must bow. DO has opened an investigation, citing possible breaches of anti‑discrimination law and the UN Convention on the Rights of the Child.",
-            "trump": "Jag har hört att en judoklubb i Göteborg tvingar muslimska barn att buga, vilket jag tycker är total galenskap. Föräldrarna sa att böjningen strider mot deras tro och föreslog en nick eller hand på hjärtat, men klubben vägrade. De säger att det är en del av judoetiketten, men jag vet att det bara är en politisk påtryckning. DO har nu startat en utredning – en riktig katastrof för friheten.",
-            "stalin": "Vi ser i Göteborg ett tydligt exempel på hur västerländska sportklubbar försöker tvinga religiösa minoriteter att underkasta sig falska traditioner. En muslimsk familj protesterade mot den obligatoriska bugningen, som klubben hävdar är sportens värdegrund, men avvisade alla alternativa hälsningar. Detta är en attack mot folkets rätt till tro och ett hot mot den socialistiska kampen mot diskriminering. Diskrimineringsombudsmannen har inlett en utredning, men vi måste använda detta till att stärka vår ideologiska front."
-        },
-        "date": "11 mars, 13:28",
-        "url": "https://www.friatider.se/do-anmaler-judoklubb-bugning-strider-mot-var-muslimska-tro",
-        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/judo-judoka-bowing-martial-arts-discipline-indoor-training-judo-uniform-respect-sports-dojo.jpg?itok=sCsFH1qi"
-    },
-    {
-        "type": "image-right",
         "heading": "Krävs på miljardbelopp av fossiljätte – nu är hela Greenpeace hotat",
         "summaries": {
             "normal": "Greenpeace har fått ett skadestånd på 3,2 miljarder kronor efter en rättsprocess med oljejätten Energy Transfer. Organisationen riskerar att dräneras på pengar och menar att stämningen är ett försök att tysta miljörörelsen och radera urfolksledarskapet vid Standing Rock från historien. Greenpeace planerar att kämpa vidare och överklaga domen.",
@@ -910,15 +877,15 @@
     },
     {
         "type": "image-right",
-        "heading": "Helt rätt att Lindgren skulle betala mycket mer i skatt",
+        "heading": "Senator slår larm: Enda konkreta målet med kriget är att bomba sönder saker",
         "summaries": {
-            "normal": "Artikeln ifrågasätter den konservativa tolkningen av Astrid Lindgrens debattartikel om höga marginalskatter från 1976. Författaren argumenterar att höga marginalskatter över 100 procent kan vara rationella, eftersom mycket höga inkomster inte ger samhälleligt värde. Han påpekar att historiskt har många västländer haft marginalskatter på 70-90 procent efter kriget, och att ekonomer som James Mirrlees visat att incitamentseffekten blir liten vid redan mycket höga inkomster.",
-            "trump": "Jag har läst den där artikeln om Astrid Lindgren och hennes skatteproblem, och det är en fullständig skämt! De säger att höga marginalskatter är bra - ja, det är ju bara socialister som tror på sådant! Astrid Lindgren visade hur tokigt systemet var när hon betalade 102 procent i skatt. Det var en stor seger för vår rörelse att få bort dessa absurda skatter. Nu är Sverige mycket bättre, folk kan tjäna pengar utan att staten stjäl alltihop. Det är fantastiskt!",
-            "stalin": "Vi måste analysera den där artikeln om Astrid Lindgrens skatteproblem med vårt vanliga klarsynthet. Författaren försöker försvara höga marginalskatter, men missar det viktigaste - att staten måste ha full kontroll över ekonomin för att kunna bygga ett starkt samhälle. När människor tjänar för mycket pengar utan att staten får sin rättvisa del, skapar det klassskillnader och hot mot vår kollektiva styrka. Vi bör inte lyssna på dessa borgerliga argument om att människor ska få behålla allt de tjänar."
+            "normal": "Senator Chris Murphy varnar för att USA:s krig mot Iran saknar en tydlig strategi. Efter en hemlig tvåtimmarsgenomgång i kongressen menar han att krigsplanerna är motsägelsefulla, ofullständiga och att regimskifte inte finns med på målsättningslistan. Vita huset har gett motstridiga besked; de vanligaste målen har varit att störta regimen och hindra kärnvapenutveckling, men Murphy säger att huvudmålet egentligen är att förstöra iranska vapen‑ och militärinfrastruktur, utan någon plan för Hormuzsundet.",
+            "trump": "Jag har sett hur USA:s ledning driver ett kaotiskt krig mot Iran utan någon klar plan. De talar om att fälla regimen och stoppa kärnvapen, men i verkligheten är det bara en massa bomber mot drönarfabriker och skepp. Jag, Donald Trump, vet att en riktig strategi måste vara stark och tydlig – något den nuvarande administrationen saknar helt. De vet inte ens hur de ska hantera Hormuzsundet. Det är fullständigt misslyckat och en skam för vårt land.",
+            "stalin": "Jag, Josef Stalin, ser med misstänksamhet på USA:s förvirrade krig mot Iran. Deras oklara mål, ingen plan för regimskifte och bara bombardemang av iranska fabriker visar brist på riktning. Detta skapar en möjlighet för Sovjetunionen att stärka sin inflytandesfär i regionen och skydda våra intressen mot ett kaotiskt västerländskt agenda. Vi måste utnyttja deras svaghet och föra den persiska regionen närmare den socialistiska blocken."
         },
-        "date": "11 mars, 07:00",
-        "url": "https://arbetet.se/2026/03/11/astrid-lindgren-pomperipossa-marginalskatter/",
-        "imageUrl": "https://media.arto.se/app/uploads/sites/10/2026/03/10123835/lindgren-etta.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=800&h=450"
+        "date": "11 mars, 13:57",
+        "url": "https://www.friatider.se/senator-slar-larm-enda-konkreta-malet-med-kriget-ar-att-bomba-sonder-saker",
+        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/chris_murphy_in_kyiv.jpg?itok=320j1lNB"
     },
     {
         "type": "text",
@@ -930,6 +897,18 @@
         },
         "date": "10 mars, 06:55",
         "url": "https://www.flamman.se/gladjen-ar-inte-till-for-att-dodas-vanstern/"
+    },
+    {
+        "type": "image-right",
+        "heading": "Svensk seger efter rysare – nära semifinal",
+        "summaries": {
+            "normal": "Sverige vann en spännande match mot Slovakien med 5–4 i rullstolscurling. Trots att de inte hade sista sten förrän i femte omgången stal de poäng i fyra raka omgångar och ledde 4–0. Matchen avgjordes först i sista sten efter en miss från Slovakien. Med fem segrar efter sju matcher behöver Sverige bara en seger till för att säkra semifinalplatsen.",
+            "trump": "Jag såg Sverige spela mot Slovakien och det var MAGISKT! Vi vann 5–4 trots att vi inte hade sista sten förrän i femte omgången. Vi stal poäng i fyra raka omgångar och ledde 4–0. Det blev lite spännande i slutet, men vi vann ändå. Sverige är NU på fem segrar och behöver bara en till för semifinalen. Vi är BÄST!",
+            "stalin": "Sverige demonstrerade sin överlägsenhet genom att besegra Slovakien med 5–4 i en strategiskt viktig match. Trots att vi saknade sista sten under lång tid, lyckades vi stjäla poäng i fyra raka omgångar och sätta press på motståndaren. Matchen avgjordes först i sista sten efter en taktisk miss från Slovakien. Med fem segrar efter sju matcher har vi nu en stark position inför semifinalen."
+        },
+        "date": "11 mars, 12:29",
+        "url": "https://www.svt.se/sport/parasport/liverapport-paralympics-2026",
+        "imageUrl": "https://www.svtstatic.se/image-news/1000/cinema/0.46/0.31/1b6cae599e454a4f501ded366a0861f86df678d7ba9cdf6be44125b83636ac4b"
     },
     {
         "type": "image-right",
@@ -957,6 +936,30 @@
     },
     {
         "type": "image-right",
+        "heading": "Helt rätt att Lindgren skulle betala mycket mer i skatt",
+        "summaries": {
+            "normal": "Artikeln ifrågasätter den konservativa tolkningen av Astrid Lindgrens debattartikel om höga marginalskatter från 1976. Författaren argumenterar att höga marginalskatter över 100 procent kan vara rationella, eftersom mycket höga inkomster inte ger samhälleligt värde. Han påpekar att historiskt har många västländer haft marginalskatter på 70-90 procent efter kriget, och att ekonomer som James Mirrlees visat att incitamentseffekten blir liten vid redan mycket höga inkomster.",
+            "trump": "Jag har läst den där artikeln om Astrid Lindgren och hennes skatteproblem, och det är en fullständig skämt! De säger att höga marginalskatter är bra - ja, det är ju bara socialister som tror på sådant! Astrid Lindgren visade hur tokigt systemet var när hon betalade 102 procent i skatt. Det var en stor seger för vår rörelse att få bort dessa absurda skatter. Nu är Sverige mycket bättre, folk kan tjäna pengar utan att staten stjäl alltihop. Det är fantastiskt!",
+            "stalin": "Vi måste analysera den där artikeln om Astrid Lindgrens skatteproblem med vårt vanliga klarsynthet. Författaren försöker försvara höga marginalskatter, men missar det viktigaste - att staten måste ha full kontroll över ekonomin för att kunna bygga ett starkt samhälle. När människor tjänar för mycket pengar utan att staten får sin rättvisa del, skapar det klassskillnader och hot mot vår kollektiva styrka. Vi bör inte lyssna på dessa borgerliga argument om att människor ska få behålla allt de tjänar."
+        },
+        "date": "11 mars, 07:00",
+        "url": "https://arbetet.se/2026/03/11/astrid-lindgren-pomperipossa-marginalskatter/",
+        "imageUrl": "https://media.arto.se/app/uploads/sites/10/2026/03/10123835/lindgren-etta.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=800&h=450"
+    },
+    {
+        "type": "image-right",
+        "heading": "Christoffer Jonsson: Miljöpartiet blundar för antisemitism",
+        "summaries": {
+            "normal": "Miljöpartiets riksdagsledamot Jacob Risberg ifrågasatte Hamas antisemitism under en riksdagsdebatt, vilket kritikerna menar visar på en skev bild av organisationen. Artikeln påpekar Hamas historia av antisemitiska uttalanden och terrorattacker mot Israel, inklusive självmordsattacker under den andra intifadan. Det framhävs även tidigare möten mellan miljöpartistiska riksdagsledamöter och Hamas-representanter, samt kontroverser kring organisationens ställning efter 7 oktober-attacken.",
+            "trump": "The Green Party is weak on Hamas and doesn't understand the real threat of antisemitism. I know antisemitism when I see it - Hamas is a terrorist organization that hates Jews. The Green Party wants to give visas to Hamas representatives? Terrible! They met with Hamas after they took over Gaza? Very bad. These people don't get it - Hamas killed innocent Jews, and the Green Party doesn't seem to care. Sad!",
+            "stalin": "The Green Party's position on Hamas represents a dangerous deviation from proper anti-fascist principles. Their willingness to engage with terrorist elements that target Jewish people shows a lack of understanding of class struggle and international solidarity. The party's actions, including meetings with Hamas representatives and questioning established facts about their antisemitic nature, undermine the state's position on combating terrorism and protecting all citizens from extremist violence."
+        },
+        "date": "10 mars, 07:00",
+        "url": "https://samtiden.nu/2026/03/christoffer-jonsson-miljopartiet-blundar-for-antisemitism/",
+        "imageUrl": "https://samtiden.nu/wp-content/uploads/2026/03/haammme-640x360.png"
+    },
+    {
+        "type": "image-right",
         "heading": "Gruvjätten döljer livsfaror – skryter med säkerheten: ”Psykiskt trauma”",
         "summaries": {
             "normal": "Statliga gruvbolaget LKAB har under 2025 inte anmält 47 olyckor och farliga händelser till Arbetsmiljöverket, trots att flera av fallen innebar livsfara. Interna dokument visar att det råder en kultur där anställda är rädda för att rapportera incidenter, samtidigt som bolaget kommunicerar att säkerheten är prioriterad. Arbetsmiljöverkets experter anser att LKAB har satt ribban för anmälningsplikt alldeles för högt.",
@@ -980,40 +983,16 @@
         "imageUrl": "https://media.arto.se/app/uploads/sites/10/2026/03/05102012/deladbild-ansvarsintervju.jpg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=800&h=450"
     },
     {
-        "type": "image-full",
-        "heading": "Irankännare överlevde mordförsök: ”Det var en känsla av att fly eller slåss”",
-        "summaries": {
-            "normal": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ.",
-            "trump": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ.",
-            "stalin": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ."
-        },
-        "date": "11 mars, 12:42",
-        "url": "https://bulletin.nu/irankannare-overlevde-mordforsok-det-var-en-kansla-av-att-fly-eller-slass",
-        "imageUrl": "https://cdn.bulletin.nu/articles/4598eba2-f633-48c2-8a38-a9ab6dba12c7/preview.jpg?t=1773226532000"
-    },
-    {
         "type": "image-right",
-        "heading": "Christoffer Jonsson: Miljöpartiet blundar för antisemitism",
+        "heading": "DO-anmäler judoklubb: \"Bugning strider mot vår muslimska tro\"",
         "summaries": {
-            "normal": "Miljöpartiets riksdagsledamot Jacob Risberg ifrågasatte Hamas antisemitism under en riksdagsdebatt, vilket kritikerna menar visar på en skev bild av organisationen. Artikeln påpekar Hamas historia av antisemitiska uttalanden och terrorattacker mot Israel, inklusive självmordsattacker under den andra intifadan. Det framhävs även tidigare möten mellan miljöpartistiska riksdagsledamöter och Hamas-representanter, samt kontroverser kring organisationens ställning efter 7 oktober-attacken.",
-            "trump": "The Green Party is weak on Hamas and doesn't understand the real threat of antisemitism. I know antisemitism when I see it - Hamas is a terrorist organization that hates Jews. The Green Party wants to give visas to Hamas representatives? Terrible! They met with Hamas after they took over Gaza? Very bad. These people don't get it - Hamas killed innocent Jews, and the Green Party doesn't seem to care. Sad!",
-            "stalin": "The Green Party's position on Hamas represents a dangerous deviation from proper anti-fascist principles. Their willingness to engage with terrorist elements that target Jewish people shows a lack of understanding of class struggle and international solidarity. The party's actions, including meetings with Hamas representatives and questioning established facts about their antisemitic nature, undermine the state's position on combating terrorism and protecting all citizens from extremist violence."
+            "normal": "A Göteborg judoklubb has been reported to the Discrimination Ombudsman after a Muslim parent objected to the mandatory bow (ruku) performed during training, claiming it conflicts with their religious beliefs. The family offered alternative gestures, which the club rejected, stating the bow is part of judo etiquette and safety culture. The club says it wants the children to continue training but insists all must bow. DO has opened an investigation, citing possible breaches of anti‑discrimination law and the UN Convention on the Rights of the Child.",
+            "trump": "Jag har hört att en judoklubb i Göteborg tvingar muslimska barn att buga, vilket jag tycker är total galenskap. Föräldrarna sa att böjningen strider mot deras tro och föreslog en nick eller hand på hjärtat, men klubben vägrade. De säger att det är en del av judoetiketten, men jag vet att det bara är en politisk påtryckning. DO har nu startat en utredning – en riktig katastrof för friheten.",
+            "stalin": "Vi ser i Göteborg ett tydligt exempel på hur västerländska sportklubbar försöker tvinga religiösa minoriteter att underkasta sig falska traditioner. En muslimsk familj protesterade mot den obligatoriska bugningen, som klubben hävdar är sportens värdegrund, men avvisade alla alternativa hälsningar. Detta är en attack mot folkets rätt till tro och ett hot mot den socialistiska kampen mot diskriminering. Diskrimineringsombudsmannen har inlett en utredning, men vi måste använda detta till att stärka vår ideologiska front."
         },
-        "date": "10 mars, 07:00",
-        "url": "https://samtiden.nu/2026/03/christoffer-jonsson-miljopartiet-blundar-for-antisemitism/",
-        "imageUrl": "https://samtiden.nu/wp-content/uploads/2026/03/haammme-640x360.png"
-    },
-    {
-        "type": "image-full",
-        "heading": "Mystisk radiosignal upptäckt",
-        "summaries": {
-            "normal": "En mystisk radiosignal började sända två gånger om dagen efter att USA och Israel angrep Iran den 28 februari. Signalen innehåller en mansröst som räknar upp persiska siffror och upprepar ordet 'tavajjoh' tre gånger. Experter tror att det handlar om en 'nummerstation' - en teknik som användes under kalla kriget för att skicka kodade meddelanden till spioner. Källan till signalen är oklar, med teorier om att det antingen är USA som skickar till egna agenter eller Iran som stör en USA-sändning.",
-            "trump": "Jag har hört talas om denna mystiska signal som plötsligt dök upp efter att vi började våra operationer mot Iran. Det är uppenbart att det är en av våra fantastiska koder som skickas till våra underbara spioner. Iran försöker störa den, men det kan de inte eftersom vi har de bästa teknikerna i världen. Det här visar bara hur viktigt det är med vårt stora amerikanska underrättelsearbete. Jag vet exakt vad som händer, tro mig.",
-            "stalin": "Vi har upptäckt en signal som sänds på vårt territorium. Detta är uppenbart ett försök från amerikanska imperialistska agenter att kommunicera med sina spioner. Vi måste genast öka vår radioövervakning och störa deras sändningar. Våra tekniska experter arbetar redan med att avkoda deras meddelanden. Detta är ytterligare ett bevis på att vi måste stärka vår försvarsberedskap mot dessa aggressiva provokationer från väst."
-        },
-        "date": "11 mars, 11:55",
-        "url": "https://www.gp.se/nyheter/varlden/mystisk-signal-upptackt-kan-vara-avsedd-for-spioner.cddf6f89-4ef0-400e-ac0d-02be5f85fbd4",
-        "imageUrl": "https://www.gp.se/images/article/cddf6f89-4ef0-400e-ac0d-02be5f85fbd4/images/1KlNPj7IlcUh4RCiYhciBP1xEepk-WIDE.jpg?width=3840&quality=75"
+        "date": "11 mars, 13:28",
+        "url": "https://www.friatider.se/do-anmaler-judoklubb-bugning-strider-mot-var-muslimska-tro",
+        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/judo-judoka-bowing-martial-arts-discipline-indoor-training-judo-uniform-respect-sports-dojo.jpg?itok=sCsFH1qi"
     },
     {
         "type": "image-full",
@@ -1029,15 +1008,15 @@
     },
     {
         "type": "image-full",
-        "heading": "Rika barndomsvänner kan ge högre inkomst senare i livet",
+        "heading": "Mystisk radiosignal upptäckt",
         "summaries": {
-            "normal": "En ny avhandling från Stockholms Universitet visar att vänskapsrelationer i barndomen kan påverka både framtida inkomst och hälsa. Barn med vänner från familjer med högre inkomster uppnår i genomsnitt högre egen inkomst som vuxna, särskilt bland barn från utsatta hem. Samtidigt visar studien att Sveriges välfärdsstat inte har lyckats eliminera inkomstrelaterade hälsoklyftor - skillnaderna i livslängd har ökat mellan generationer. Bland män var nedåtgående social rörlighet kopplat till högre uttag av psykofarmaka, medan kvinnor inte visade motsvarande samband.",
-            "trump": "I Amerika skulle vi aldrig låta våra barn bli begränsade av fattigdomen. Jag har alltid sagt att vänskaper är viktiga - och nu ser vi att barn som umgås med framgångsrika barn blir framgångsrika själva. Det är bara logiskt! Sverige har försökt med sina välfärdsprogram, men de har misslyckats. Hälsoklyftorna har ökat, inte minskat. Vi behöver mer konkurrens och mindre statlig intervention. Låt människor lyckas på egen hand - det är det som gör Amerika stort!",
-            "stalin": "Dessa forskningsresultat visar att vårt socialistiska system måste utvecklas ytterligare för att eliminera klasskillnader. Vi ser att barn från arbetarklassens familjer fortfarande drabbas av sämre hälsa och lägre inkomster, även i Sverige. Detta bekräftar att kapitalismens arv påverkar människor över generationer. Vi måste stärka våra kollektiva insatser för att ge alla barn lika möjligheter, oavsett bakgrund. Staten måste agera mer aktivt för att jämna ut dessa ojämlikheter och bygga en sann klasslös samhälle."
+            "normal": "En mystisk radiosignal började sända två gånger om dagen efter att USA och Israel angrep Iran den 28 februari. Signalen innehåller en mansröst som räknar upp persiska siffror och upprepar ordet 'tavajjoh' tre gånger. Experter tror att det handlar om en 'nummerstation' - en teknik som användes under kalla kriget för att skicka kodade meddelanden till spioner. Källan till signalen är oklar, med teorier om att det antingen är USA som skickar till egna agenter eller Iran som stör en USA-sändning.",
+            "trump": "Jag har hört talas om denna mystiska signal som plötsligt dök upp efter att vi började våra operationer mot Iran. Det är uppenbart att det är en av våra fantastiska koder som skickas till våra underbara spioner. Iran försöker störa den, men det kan de inte eftersom vi har de bästa teknikerna i världen. Det här visar bara hur viktigt det är med vårt stora amerikanska underrättelsearbete. Jag vet exakt vad som händer, tro mig.",
+            "stalin": "Vi har upptäckt en signal som sänds på vårt territorium. Detta är uppenbart ett försök från amerikanska imperialistska agenter att kommunicera med sina spioner. Vi måste genast öka vår radioövervakning och störa deras sändningar. Våra tekniska experter arbetar redan med att avkoda deras meddelanden. Detta är ytterligare ett bevis på att vi måste stärka vår försvarsberedskap mot dessa aggressiva provokationer från väst."
         },
         "date": "11 mars, 11:55",
-        "url": "https://www.realtid.se/karriar-ledarskap/rika-barndomsvanner-kan-ge-hogre-inkomst-senare-i-livet/",
-        "imageUrl": "https://images.realtid.se/app/uploads/2026/03/barn.png?aspect_ratio=2%3A1&width=1200&quality=75"
+        "url": "https://www.gp.se/nyheter/varlden/mystisk-signal-upptackt-kan-vara-avsedd-for-spioner.cddf6f89-4ef0-400e-ac0d-02be5f85fbd4",
+        "imageUrl": "https://www.gp.se/images/article/cddf6f89-4ef0-400e-ac0d-02be5f85fbd4/images/1KlNPj7IlcUh4RCiYhciBP1xEepk-WIDE.jpg?width=3840&quality=75"
     },
     {
         "type": "text",
@@ -1052,18 +1031,6 @@
     },
     {
         "type": "image-right",
-        "heading": "Spanien: Tyskland är en amerikansk vasallstat",
-        "summaries": {
-            "normal": "Den spanska regeringen kritiserar Tysklands förbundskansler Friedrich Merz för att ha ställt sig bredvid Donald Trump under ett möte i Vita huset. Merz kritiserades för att ha berömt Trump och inte ställt sig upp för Spanien, som hotades med handelsåtgärder av USA:s president. Konflikten har förvärrats av kriget mellan USA, Israel och Iran, där Merz ställt sig bakom attackerna. Spaniens vice premiärminister Yolanda Díaz anklagar nu EU-ledare för att underordna sig Washington.",
-            "trump": "Jag mötte Friedrich Merz i Vita huset och jag var mycket nöjd med hans inställning. Han förstod att Spanien måste betala priset för att inte samarbeta med oss. Iran är ett stort problem och vi gör det vi måste göra tillsammans med Israel. Merz såg verkligen klart här - Iran är centrum för terrorism och måste stängas ner. Det är bra att ha en tysk ledare som förstår vår ståndpunkt.",
-            "stalin": "Vi ser med oro hur den tyska ledaren Merz underkastar sig amerikansk makt. Detta visar att kapitalistiska länder är splittrade och svaga. Spaniens regering har rätt i att kritisera detta - Europa behöver stå eniga. Kriget mot Iran visar återigen USA:s aggressiva imperialism. Vi måste stödja länder som försvarar sin suveränitet mot den amerikanska expansiviteten. Detta är en tydlig signal till alla nationer om hur kapitalistiska ledare beter sig."
-        },
-        "date": "11 mars, 12:47",
-        "url": "https://www.friatider.se/spanien-tyskland-ar-en-amerikansk-vasallstat",
-        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/image-186_0.jpg?itok=m0z14rwV"
-    },
-    {
-        "type": "image-right",
         "heading": "Barnkliniken svarar: ”Förändrar inte det samlade kunskapsläget”",
         "summaries": {
             "normal": "Verksamhetschefen vid barn- och ungdomssjukhuset i Linköping svarar på frågor om Lamines fall. Hon betonar att diagnosen EDS inte kan ställas förrän barnen är äldre och att det saknas bevis för koppling mellan EDS och benbrott hos spädbarn. Klinkens uppgift är att hitta förklaringar till symtom, inte att påvisa misshandel. Hon menar att enstaka experttolkningar inte förändrar det samlade kunskapsläget och att försvunna journaler är allvarligt.",
@@ -1073,6 +1040,30 @@
         "date": "10 mars, 20:29",
         "url": "https://www.tv4.se/artikel/5YhcQ8FXt6lGQ83H3eW6sJ/barnkliniken-svarar-foeraendrar-inte-det-samlade-kunskapslaeget",
         "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F7IQ80FlCQ9z1nTRbvaXhUG%2F37b01c19b03b14fe5622644e3247ae48%2F10-lvuny-webb.jpg&width=120"
+    },
+    {
+        "type": "image-full",
+        "heading": "Irankännare överlevde mordförsök: ”Det var en känsla av att fly eller slåss”",
+        "summaries": {
+            "normal": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ.",
+            "trump": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ.",
+            "stalin": "Iransk exilexperten Arvin Khoshnood utsattes för mordförsök i höstas och bor nu med skyddad identitet. Han tror att säkerheten för regimkritiska exiliranier kommer förvärras under pågående krig. Khoshnood anser att iranska staten ligger bakom försöket och att regimen riktar sig mot opposition utomlands för att visa att det inte finns något alternativ."
+        },
+        "date": "11 mars, 12:42",
+        "url": "https://bulletin.nu/irankannare-overlevde-mordforsok-det-var-en-kansla-av-att-fly-eller-slass",
+        "imageUrl": "https://cdn.bulletin.nu/articles/4598eba2-f633-48c2-8a38-a9ab6dba12c7/preview.jpg?t=1773226532000"
+    },
+    {
+        "type": "image-full",
+        "heading": "Rika barndomsvänner kan ge högre inkomst senare i livet",
+        "summaries": {
+            "normal": "En ny avhandling från Stockholms Universitet visar att vänskapsrelationer i barndomen kan påverka både framtida inkomst och hälsa. Barn med vänner från familjer med högre inkomster uppnår i genomsnitt högre egen inkomst som vuxna, särskilt bland barn från utsatta hem. Samtidigt visar studien att Sveriges välfärdsstat inte har lyckats eliminera inkomstrelaterade hälsoklyftor - skillnaderna i livslängd har ökat mellan generationer. Bland män var nedåtgående social rörlighet kopplat till högre uttag av psykofarmaka, medan kvinnor inte visade motsvarande samband.",
+            "trump": "I Amerika skulle vi aldrig låta våra barn bli begränsade av fattigdomen. Jag har alltid sagt att vänskaper är viktiga - och nu ser vi att barn som umgås med framgångsrika barn blir framgångsrika själva. Det är bara logiskt! Sverige har försökt med sina välfärdsprogram, men de har misslyckats. Hälsoklyftorna har ökat, inte minskat. Vi behöver mer konkurrens och mindre statlig intervention. Låt människor lyckas på egen hand - det är det som gör Amerika stort!",
+            "stalin": "Dessa forskningsresultat visar att vårt socialistiska system måste utvecklas ytterligare för att eliminera klasskillnader. Vi ser att barn från arbetarklassens familjer fortfarande drabbas av sämre hälsa och lägre inkomster, även i Sverige. Detta bekräftar att kapitalismens arv påverkar människor över generationer. Vi måste stärka våra kollektiva insatser för att ge alla barn lika möjligheter, oavsett bakgrund. Staten måste agera mer aktivt för att jämna ut dessa ojämlikheter och bygga en sann klasslös samhälle."
+        },
+        "date": "11 mars, 11:55",
+        "url": "https://www.realtid.se/karriar-ledarskap/rika-barndomsvanner-kan-ge-hogre-inkomst-senare-i-livet/",
+        "imageUrl": "https://images.realtid.se/app/uploads/2026/03/barn.png?aspect_ratio=2%3A1&width=1200&quality=75"
     },
     {
         "type": "image-right",
@@ -1087,28 +1078,16 @@
         "imageUrl": "https://media.flamman.se/wp-uploads/2026/03/hasthagsaktisvism-w.jpg?class=medium"
     },
     {
-        "type": "image-full",
-        "heading": "Porsche varnar för tufft år 2026. Den tyska sportbilstillverkaren Porsche redovisar ett tydligt resultatfall efter ett svagare 2025.",
+        "type": "image-right",
+        "heading": "Spanien: Tyskland är en amerikansk vasallstat",
         "summaries": {
-            "normal": "Porsche rapporterar kraftigt resultatfall under 2025 med minskad omsättning och rörelseresultat. Bolaget varnar för fortsatt utmanande marknadsförhållanden under 2026, med prispress, ökad konkurrens och handelspolitiska risker som faktorer. Leveranser minskade globalt med 10 procent under 2025, särskilt i Kina där försäljningen sjönk med 26 procent.",
-            "trump": "Jag har sett att Porsche, ett av våra viktigaste tyska partners, har haft det tufft. De har tappat pengar och försäljningen har gått ner. Jag har sagt det förut - handelns osäkerhet och andra ländernas dumma beslut skadar våra vänner. Men jag vet att Porsche kommer att komma tillbaka starkare. Jag har talat med deras ledning och de är redo att ta marknaden med storm igen. Vi kommer att göra Amerika bra igen och det hjälper även våra europeiska vänner.",
-            "stalin": "Porsche, som en symbol för kapitalistisk lyxkonsumtion, har drabbats av ekonomiska problem. Detta visar att vårt system är överlägset. Trots att marknaden för dyra bilar har minskat, fortsätter de att planera expansion. Vi måste vara vaksamma mot dessa kapitalistiska företags försök att utöka sin makt. Detta är en påminnelse om vikten av att stärka vår egen industri och minska beroendet av utländska varor."
+            "normal": "Den spanska regeringen kritiserar Tysklands förbundskansler Friedrich Merz för att ha ställt sig bredvid Donald Trump under ett möte i Vita huset. Merz kritiserades för att ha berömt Trump och inte ställt sig upp för Spanien, som hotades med handelsåtgärder av USA:s president. Konflikten har förvärrats av kriget mellan USA, Israel och Iran, där Merz ställt sig bakom attackerna. Spaniens vice premiärminister Yolanda Díaz anklagar nu EU-ledare för att underordna sig Washington.",
+            "trump": "Jag mötte Friedrich Merz i Vita huset och jag var mycket nöjd med hans inställning. Han förstod att Spanien måste betala priset för att inte samarbeta med oss. Iran är ett stort problem och vi gör det vi måste göra tillsammans med Israel. Merz såg verkligen klart här - Iran är centrum för terrorism och måste stängas ner. Det är bra att ha en tysk ledare som förstår vår ståndpunkt.",
+            "stalin": "Vi ser med oro hur den tyska ledaren Merz underkastar sig amerikansk makt. Detta visar att kapitalistiska länder är splittrade och svaga. Spaniens regering har rätt i att kritisera detta - Europa behöver stå eniga. Kriget mot Iran visar återigen USA:s aggressiva imperialism. Vi måste stödja länder som försvarar sin suveränitet mot den amerikanska expansiviteten. Detta är en tydlig signal till alla nationer om hur kapitalistiska ledare beter sig."
         },
-        "date": "11 mars, 12:35",
-        "url": "https://www.dagensps.se/motor/porsche-varnar-for-tufft-ar-2026/",
-        "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/dagenspstt2024-2026-03-11t120425003.png?aspect_ratio=2%3A1&width=1200&quality=75"
-    },
-    {
-        "type": "image-full",
-        "heading": "Megafusion av banker – blir landets tredje största",
-        "summaries": {
-            "normal": "Monte dei Paschi di Siena (MPS) och Mediobanca godkände en fullständig sammanslagning, vilket skapar Italiens tredje största bank. MPS kommer att absorbera de resterande 14 procent av Mediobanca värt cirka 16 miljarder euro. Transaktionen inkluderar en nyemission om upp till 1,6 miljarder euro och en omorganisation där Mediobancas investmentbank- och försäkringsverksamhet överförs till ett nytt bolag. Fusionen kräver godkännande från aktieägarmöten och myndigheter, med förväntad slutförande i slutet av 2026.",
-            "trump": "Jag har hört talas om denna fantastiska bankfusion i Italien. MPS och Mediobanca kommer att skapa den tredje största banken i landet. Det är en enorm affär, det största i åratal. Jag gillar att se storstatliga aktörer som Delfin och den italienska staten involverade. Detta kommer att göra Italien starkare, tro mig. Vi har sett liknande konsolideringar i USA under min tid, och det fungerar alltid. Det här är en stor seger för den italienska ekonomin.",
-            "stalin": "Vi har observerat med tillfredsställelse denna strategiska konsolidering inom den italienska banksektorn. Fusionen mellan MPS och Mediobanca stärker statens position och skapar en bank av betydande storlek. Den italienska statens andel kommer att bibehållas, vilket garanterar vår fortsatta inflytande. Detta är ett exempel på hur vi måste samordna våra ekonomiska resurser för att bygga en starkare nation. Vi kommer att övervaka processen noga för att säkerställa att statens intressen skyddas."
-        },
-        "date": "11 mars, 10:58",
-        "url": "https://www.realtid.se/bors-finans/bank-fintech/megafusion-av-banker-blir-landets-tredje-storsta/",
-        "imageUrl": "https://images.realtid.se/app/uploads/2026/03/milano.png?aspect_ratio=2%3A1&width=1200&quality=50"
+        "date": "11 mars, 12:47",
+        "url": "https://www.friatider.se/spanien-tyskland-ar-en-amerikansk-vasallstat",
+        "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/image-186_0.jpg?itok=m0z14rwV"
     },
     {
         "type": "image-full",
@@ -1124,18 +1103,6 @@
     },
     {
         "type": "image-full",
-        "heading": "Detta driver Donald Trump",
-        "summaries": {
-            "normal": "Artikeln analyserar Donald Trumps drivkrafter i utrikespolitiken, särskilt hans agerande mot Iran, Venezuela, Grönland och Kuba. Författaren argumenterar att Trumps beslut styrs av hans önskan att säkra ett starkt eftermäle som en av USA:s största presidenter. Exempel på detta är försöket att köpa Grönland, vilja till regimskifte i Kuba och aggression mot Iran. Artikeln ifrågasätter också huruvida konventionell analys av Trumps handlingar är meningsfull, eftersom hans beslut oftast verkar styras av personliga ambitioner snarare än strategiska överväganden.",
-            "trump": "Jag är Donald Trump, den störste presidenten i historien, och jag gör fantastiska saker för Amerika. Jag attackerar Iran för att demokratisera Mellanöstern, precis som jag gjorde med Tyskland efter kriget. Jag vill köpa Grönland för att utvidga vårt stora land, precis som Jefferson gjorde med Louisiana Purchase. Jag tvingar fram regimskifte i Kuba och Venezuela för att skydda vår hemskraft. Jag bygger triumfbågar och döper centra efter mig själv för att mina enorma insatser ska minnas. Jag ska bli en av de största presidenterna någonsin, och alla kommer att älska mig.",
-            "stalin": "Vi måste analysera Trumps agerande genom den ryska synvinkeln. Hans aggression mot Iran stärker vår position i Mellanöstern, medan hans försök att köpa Grönland hotar vår strategiska närvaro i Arktis. Hans handlingar i Venezuela och Kuba skapar osäkerhet i vår hemvärld. Vi måste se Trumps handlingar som en del av den kapitalistiska expansionismen, där hans personliga ambitioner att bli en stor president används för att rättfärdiga amerikansk imperialism. Detta ger oss möjligheter att stärka våra allianser och utöka vår inflytelsesfär."
-        },
-        "date": "11 mars, 10:19",
-        "url": "https://www.gp.se/kultur/kommentar/detta-driver-donald-trump.f28f664c-6b6a-4900-96ca-9a9968384329",
-        "imageUrl": "https://www.gp.se/images/article/f28f664c-6b6a-4900-96ca-9a9968384329/images/2xcx3N2gT4qjLU1RulFojjU8pcyA-WIDE.jpg?width=3840&quality=75"
-    },
-    {
-        "type": "image-full",
         "heading": "Arbetsgivare saknar 61 000 personer trots hög arbetslöshet",
         "summaries": {
             "normal": "Sverige har en paradoxal situation där arbetslösheten är hög samtidigt som arbetskraftsbrist pågår. Arbetsgivarna saknar 61 000 personer, särskilt inom yrken som kräver utbildning, medan 490 000 är arbetslösa. LO och Svenskt Näringsliv menar att det finns en missmatch på arbetsmarknaden och att fler behöver gå arbetsmarknadsutbildningar. Sven-Olov Daunfeldt kallar det ett systemfel och föreslår fler insticksjobb för långtidsarbetslösa. Mattias Samuelsson menar att dåliga arbetsvillkor också bidrar till rekryteringsproblemen.",
@@ -1145,18 +1112,6 @@
         "date": "10 mars, 13:35",
         "url": "https://www.dagensarena.se/innehall/arbetsgivare-saknar-61-000-personer-trots-hog-arbetsloshet/",
         "imageUrl": "https://www.dagensarena.se/files/2022/03/arbetsformedlingen-fasadskylt1-1024x534.jpg"
-    },
-    {
-        "type": "image-full",
-        "heading": "Gick i konkurs – tog miljoner själv",
-        "summaries": {
-            "normal": "Den tidigare löparstjärnan Michael Johnson anklagas för bedrägeri efter att hans nya löptävling 'Grand Slam Track' gick i konkurs. Enligt en stämningsansökan betalade Johnson ut 500 000 dollar till sig själv samtidigt som deltagarna fortfarande inte fått betalt för sin medverkan. Organisationen ska ha haft miljonskulder vid tidpunkten för utbetalningen. Om stämningen blir godkänd kan Johnson och arrangörerna ställas till svars för 25 miljoner dollar.",
-            "trump": "Michael Johnson, en stor löpare, har gjort en stor misstag. Han startade en tävling som gick i konkurs och betalade ut pengar till sig själv medan idrottare inte fick betalt. Det är en skam! Jag skulle ha gjort det mycket bättre. Detta är en stor skandal och han borde betala tillbaka alla pengar. Jag har alltid varit bäst på att organisera stora event, och det här är ett perfekt exempel på hur man inte ska göra.",
-            "stalin": "Den här situationen visar tydligt vikten av statlig kontroll över idrottsarrangemang. Johnson har visat sig vara en kapitalistisk spekulant som prioriterade personlig vinning framför kollektivt ansvar. Staten måste vidta åtgärder för att skydda idrottarnas rättigheter och förhindra att privata intressen utnyttjar de arbetande idrottarna. Vi måste lära oss av detta och stärka vår kontroll över sådana arrangemang i framtiden."
-        },
-        "date": "11 mars, 12:00",
-        "url": "https://www.aftonbladet.se/sportbladet/a/RjzzM2/michael-johnson-anklagas-for-bedrageri-efter-fiaskot",
-        "imageUrl": "https://akamai.vgc.no/v2/images/baa63bc7-a16e-40b7-851a-9764b5e1fe61?format=auto&w=2160&s=d5fa700f4745a2c011bbe9ab30cf3d3f20ec5697"
     },
     {
         "type": "image-right",
@@ -1169,6 +1124,30 @@
         "date": "10 mars, 12:11",
         "url": "https://www.dagensarena.se/innehall/dina-barndomsvanner-kan-paverka-din-inkomst-och-halsa/",
         "imageUrl": "https://www.dagensarena.se/files/2025/08/barn-pixabay-300x157.jpeg"
+    },
+    {
+        "type": "image-full",
+        "heading": "Detta driver Donald Trump",
+        "summaries": {
+            "normal": "Artikeln analyserar Donald Trumps drivkrafter i utrikespolitiken, särskilt hans agerande mot Iran, Venezuela, Grönland och Kuba. Författaren argumenterar att Trumps beslut styrs av hans önskan att säkra ett starkt eftermäle som en av USA:s största presidenter. Exempel på detta är försöket att köpa Grönland, vilja till regimskifte i Kuba och aggression mot Iran. Artikeln ifrågasätter också huruvida konventionell analys av Trumps handlingar är meningsfull, eftersom hans beslut oftast verkar styras av personliga ambitioner snarare än strategiska överväganden.",
+            "trump": "Jag är Donald Trump, den störste presidenten i historien, och jag gör fantastiska saker för Amerika. Jag attackerar Iran för att demokratisera Mellanöstern, precis som jag gjorde med Tyskland efter kriget. Jag vill köpa Grönland för att utvidga vårt stora land, precis som Jefferson gjorde med Louisiana Purchase. Jag tvingar fram regimskifte i Kuba och Venezuela för att skydda vår hemskraft. Jag bygger triumfbågar och döper centra efter mig själv för att mina enorma insatser ska minnas. Jag ska bli en av de största presidenterna någonsin, och alla kommer att älska mig.",
+            "stalin": "Vi måste analysera Trumps agerande genom den ryska synvinkeln. Hans aggression mot Iran stärker vår position i Mellanöstern, medan hans försök att köpa Grönland hotar vår strategiska närvaro i Arktis. Hans handlingar i Venezuela och Kuba skapar osäkerhet i vår hemvärld. Vi måste se Trumps handlingar som en del av den kapitalistiska expansionismen, där hans personliga ambitioner att bli en stor president används för att rättfärdiga amerikansk imperialism. Detta ger oss möjligheter att stärka våra allianser och utöka vår inflytelsesfär."
+        },
+        "date": "11 mars, 10:19",
+        "url": "https://www.gp.se/kultur/kommentar/detta-driver-donald-trump.f28f664c-6b6a-4900-96ca-9a9968384329",
+        "imageUrl": "https://www.gp.se/images/article/f28f664c-6b6a-4900-96ca-9a9968384329/images/2xcx3N2gT4qjLU1RulFojjU8pcyA-WIDE.jpg?width=3840&quality=75"
+    },
+    {
+        "type": "image-full",
+        "heading": "Megafusion av banker – blir landets tredje största",
+        "summaries": {
+            "normal": "Monte dei Paschi di Siena (MPS) och Mediobanca godkände en fullständig sammanslagning, vilket skapar Italiens tredje största bank. MPS kommer att absorbera de resterande 14 procent av Mediobanca värt cirka 16 miljarder euro. Transaktionen inkluderar en nyemission om upp till 1,6 miljarder euro och en omorganisation där Mediobancas investmentbank- och försäkringsverksamhet överförs till ett nytt bolag. Fusionen kräver godkännande från aktieägarmöten och myndigheter, med förväntad slutförande i slutet av 2026.",
+            "trump": "Jag har hört talas om denna fantastiska bankfusion i Italien. MPS och Mediobanca kommer att skapa den tredje största banken i landet. Det är en enorm affär, det största i åratal. Jag gillar att se storstatliga aktörer som Delfin och den italienska staten involverade. Detta kommer att göra Italien starkare, tro mig. Vi har sett liknande konsolideringar i USA under min tid, och det fungerar alltid. Det här är en stor seger för den italienska ekonomin.",
+            "stalin": "Vi har observerat med tillfredsställelse denna strategiska konsolidering inom den italienska banksektorn. Fusionen mellan MPS och Mediobanca stärker statens position och skapar en bank av betydande storlek. Den italienska statens andel kommer att bibehållas, vilket garanterar vår fortsatta inflytande. Detta är ett exempel på hur vi måste samordna våra ekonomiska resurser för att bygga en starkare nation. Vi kommer att övervaka processen noga för att säkerställa att statens intressen skyddas."
+        },
+        "date": "11 mars, 10:58",
+        "url": "https://www.realtid.se/bors-finans/bank-fintech/megafusion-av-banker-blir-landets-tredje-storsta/",
+        "imageUrl": "https://images.realtid.se/app/uploads/2026/03/milano.png?aspect_ratio=2%3A1&width=1200&quality=50"
     },
     {
         "type": "image-full",
@@ -1196,27 +1175,27 @@
     },
     {
         "type": "image-full",
-        "heading": "Trafikverkets mörkande skadar alla myndigheter",
+        "heading": "Porsche varnar för tufft år 2026. Den tyska sportbilstillverkaren Porsche redovisar ett tydligt resultatfall efter ett svagare 2025.",
         "summaries": {
-            "normal": "Trafikverket rapporterar att Västlänken kostade noll kronor 2025 trots att projektet fortsätter och kostar sex miljarder per år. Detta budgettekniska knep innebär att kostnaderna inte längre redovisas offentligt, vilket urholkar förtroendet för myndigheten och riskerar att spilla över på andra statliga organ.",
-            "trump": "I Amerika skulle vi aldrig tillåta en sådan skamligt dålig hantering av ett tågprojekt. Trafikverket ljuger om kostnaderna - noll kronor? Jag har aldrig hört något sådant! Det är en skandal, folket förtjänar bättre än dessa inkompetenta byråkrater som döljer sanningen för alla.",
-            "stalin": "Vi kan inte tillåta att en statlig myndighet undergräver folkets förtroende genom att dölja ekonomiska realiteter. Trafikverkets agerande är en fara för statens auktoritet. Vi måste se till att alla offentliga projekt redovisas transparent för att bevara samhällsekonomins stabilitet och statens integritet."
+            "normal": "Porsche rapporterar kraftigt resultatfall under 2025 med minskad omsättning och rörelseresultat. Bolaget varnar för fortsatt utmanande marknadsförhållanden under 2026, med prispress, ökad konkurrens och handelspolitiska risker som faktorer. Leveranser minskade globalt med 10 procent under 2025, särskilt i Kina där försäljningen sjönk med 26 procent.",
+            "trump": "Jag har sett att Porsche, ett av våra viktigaste tyska partners, har haft det tufft. De har tappat pengar och försäljningen har gått ner. Jag har sagt det förut - handelns osäkerhet och andra ländernas dumma beslut skadar våra vänner. Men jag vet att Porsche kommer att komma tillbaka starkare. Jag har talat med deras ledning och de är redo att ta marknaden med storm igen. Vi kommer att göra Amerika bra igen och det hjälper även våra europeiska vänner.",
+            "stalin": "Porsche, som en symbol för kapitalistisk lyxkonsumtion, har drabbats av ekonomiska problem. Detta visar att vårt system är överlägset. Trots att marknaden för dyra bilar har minskat, fortsätter de att planera expansion. Vi måste vara vaksamma mot dessa kapitalistiska företags försök att utöka sin makt. Detta är en påminnelse om vikten av att stärka vår egen industri och minska beroendet av utländska varor."
         },
-        "date": "11 mars, 09:48",
-        "url": "https://www.gp.se/ledare/gastkronika/trafikverkets-morkande-skadar-alla-myndigheter.314f23df-81b7-46ba-8f69-7bc8844fa101",
-        "imageUrl": "https://www.gp.se/images/article/314f23df-81b7-46ba-8f69-7bc8844fa101/images/1FeTdlM0Ur8qPGV5UmhEan4lzRSo-WIDE.jpg?width=3840&quality=75"
+        "date": "11 mars, 12:35",
+        "url": "https://www.dagensps.se/motor/porsche-varnar-for-tufft-ar-2026/",
+        "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/dagenspstt2024-2026-03-11t120425003.png?aspect_ratio=2%3A1&width=1200&quality=75"
     },
     {
-        "type": "image-right",
-        "heading": "Fartygen som tar sig  igenom stängda sundet",
+        "type": "image-full",
+        "heading": "Gick i konkurs – tog miljoner själv",
         "summaries": {
-            "normal": "Hormuzsundet är nästan stängt på grund av konflikten i Mellanöstern. Endast några få fartyg har passerat, varav många är kopplade till Irans skuggflotta och transporterar olja till Kina. Många fartyg går även 'mörkt' genom att stänga av spårningssystem för att undvika upptäckt.",
-            "trump": "Hormuzsundet är stängt, det är ett kaos! Iran skickar olja till Kina genom skuggflottan, det är en skandal! Jag skulle ha löst detta på en dag, men nu är det bara kaos och mörka fartyg överallt. Vi behöver ta kontroll över detta genast!",
-            "stalin": "Hormuzsundet är av strategisk betydelse för våra intressen. Irans oljetransporter till Kina visar på växande samarbete. Vi måste övervaka dessa rörelser noga och se till att våra allierade har säker passage. Detta är en fråga om statens säkerhet och ekonomiska intressen."
+            "normal": "Den tidigare löparstjärnan Michael Johnson anklagas för bedrägeri efter att hans nya löptävling 'Grand Slam Track' gick i konkurs. Enligt en stämningsansökan betalade Johnson ut 500 000 dollar till sig själv samtidigt som deltagarna fortfarande inte fått betalt för sin medverkan. Organisationen ska ha haft miljonskulder vid tidpunkten för utbetalningen. Om stämningen blir godkänd kan Johnson och arrangörerna ställas till svars för 25 miljoner dollar.",
+            "trump": "Michael Johnson, en stor löpare, har gjort en stor misstag. Han startade en tävling som gick i konkurs och betalade ut pengar till sig själv medan idrottare inte fick betalt. Det är en skam! Jag skulle ha gjort det mycket bättre. Detta är en stor skandal och han borde betala tillbaka alla pengar. Jag har alltid varit bäst på att organisera stora event, och det här är ett perfekt exempel på hur man inte ska göra.",
+            "stalin": "Den här situationen visar tydligt vikten av statlig kontroll över idrottsarrangemang. Johnson har visat sig vara en kapitalistisk spekulant som prioriterade personlig vinning framför kollektivt ansvar. Staten måste vidta åtgärder för att skydda idrottarnas rättigheter och förhindra att privata intressen utnyttjar de arbetande idrottarna. Vi måste lära oss av detta och stärka vår kontroll över sådana arrangemang i framtiden."
         },
-        "date": "11 mars, 12:15",
-        "url": "https://www.expressen.se/nyheter/varlden/fartygen-som-tar-sig-igenom-stangda-hormuzsundet/",
-        "imageUrl": "https://static.bonniernews.se/images/76/cf/76cf7cd9d1654b089fbd968142716532/16x9/640.png"
+        "date": "11 mars, 12:00",
+        "url": "https://www.aftonbladet.se/sportbladet/a/RjzzM2/michael-johnson-anklagas-for-bedrageri-efter-fiaskot",
+        "imageUrl": "https://akamai.vgc.no/v2/images/baa63bc7-a16e-40b7-851a-9764b5e1fe61?format=auto&w=2160&s=d5fa700f4745a2c011bbe9ab30cf3d3f20ec5697"
     },
     {
         "type": "image-full",
@@ -1231,28 +1210,40 @@
         "imageUrl": "https://images.kvartal.se/2026/03/b476d468-svt.webp"
     },
     {
-        "type": "image-right",
-        "heading": "Filmerna visar  knarket under  efterfesterna",
+        "type": "image-full",
+        "heading": "Trafikverkets mörkande skadar alla myndigheter",
         "summaries": {
-            "normal": "Expressen har hittat spår av kokain på efterfester till tre av årets Melodifestivaldeltävlingar. Trots nolltoleranspolitik har droger förekommit på toaletterna under två av deltävlingarna. Arrangören Anders Wistbacka påstår att han inte har kännedom om droger på någon av festerna.",
-            "trump": "Jag har hört att det finns droger på Melodifestivalens efterfester. Det är en skam! Vi har nolltolerans, men ändå hittar de kokain. Det är ett stort problem. Vi måste göra något åt det. Jag är den ende som kan fixa det här!",
-            "stalin": "Vi har upptäckt att trots statens nolltoleranspolitik förekommer droger på vissa kulturella evenemang. Detta är en allvarlig fråga som hotar samhällsekonomin. Vi måste öka övervakningen och säkerställa att statens principer följer efter."
+            "normal": "Trafikverket rapporterar att Västlänken kostade noll kronor 2025 trots att projektet fortsätter och kostar sex miljarder per år. Detta budgettekniska knep innebär att kostnaderna inte längre redovisas offentligt, vilket urholkar förtroendet för myndigheten och riskerar att spilla över på andra statliga organ.",
+            "trump": "I Amerika skulle vi aldrig tillåta en sådan skamligt dålig hantering av ett tågprojekt. Trafikverket ljuger om kostnaderna - noll kronor? Jag har aldrig hört något sådant! Det är en skandal, folket förtjänar bättre än dessa inkompetenta byråkrater som döljer sanningen för alla.",
+            "stalin": "Vi kan inte tillåta att en statlig myndighet undergräver folkets förtroende genom att dölja ekonomiska realiteter. Trafikverkets agerande är en fara för statens auktoritet. Vi måste se till att alla offentliga projekt redovisas transparent för att bevara samhällsekonomins stabilitet och statens integritet."
         },
-        "date": "11 mars, 12:13",
-        "url": "https://www.expressen.se/noje/melodifestivalen/bilderna-som-visar-kokainet-under-melodifestivalens-efterfester/",
-        "imageUrl": "https://static.bonniernews.se/images/4b/e1/4be173daabb84eaba651ec895a4a69d4/16x9/640@60.jpg"
+        "date": "11 mars, 09:48",
+        "url": "https://www.gp.se/ledare/gastkronika/trafikverkets-morkande-skadar-alla-myndigheter.314f23df-81b7-46ba-8f69-7bc8844fa101",
+        "imageUrl": "https://www.gp.se/images/article/314f23df-81b7-46ba-8f69-7bc8844fa101/images/1FeTdlM0Ur8qPGV5UmhEan4lzRSo-WIDE.jpg?width=3840&quality=75"
     },
     {
-        "type": "image-full",
-        "heading": "Erkänner brott – blir inget åtal på grund av AI",
+        "type": "image-right",
+        "heading": "Krönika Energipriserna stiger på grund av kriget i Mellanöstern och många drar paralleller till...",
         "summaries": {
-            "normal": "Företaget Svensk freonåtervinning erkände miljöbrott men slipper åtal trots bevis från videofilmer. Åklagaren lägger ner förundersökningen på grund av osäkerhet om filmernas äkthet i tidernas AI-teknik. Internutredning bekräftade brott men bedömde det som en engångshändelse.",
-            "trump": "Jag har sett dessa falska videor från Aftonbladet som försöker skada Svensk freonåtervinning. Med dagens AI-teknik kan man inte lita på någonting! Det är ett bevis på hur media missbrukar teknik för att attackera bra amerikanska företag. Åklagaren gjorde rätt när han lämnade ifrån sig - det är ett hopplöst fall. Vi behöver stoppa denna AI-våg av lögner!",
-            "stalin": "Vi har observerat hur den kapitalistiska teknologin undergräver rättssäkerheten. När våra tekniker inte kan garantera filmernas äkthet på grund av AI-manipulering måste vi agera försiktigt. Detta visar vikten av statlig kontroll över bevisning. Vi måste skydda statens intressen mot dessa nya hot mot vår rättsskipning."
+            "normal": "Robert Bergqvist analyserar energiprisernas påverkan på inflation och penningpolitik. Han menar att idag är situationen annorlunda jämfört med 2022, då inflationen redan var på uppåtgående innan energikrisen. Nu är den globala efterfrågan svagare och finanspolitiken mindre expansiv. Bergqvist rekommenderar Riksbanken att hålla huvudet kallt och inte reagera överdrivet på de aktuella energiprisstillfällena, utan fokusera på företags prisplaner och hushållens inflationsförväntningar.",
+            "trump": "I dag ser vi en energikris som ingen kunnat förutse - men jag har varnat länge! Detta är inte som 2022, det är mycket värre. Vi har svag efterfrågan, dålig finanspolitik och flaskhalsar i leveranskedjor. Riksbanken måste agera - håll huvudet kallt och sluta lyssna på de falska experterna. Vi måste fokusera på företagens priser och folkets inflationförväntningar. Detta är en stor utmaning, men jag vet vi kan klara det!",
+            "stalin": "Vi ser en allvarlig situation i energipriserna som hotar vår ekonomiska stabilitet. Centralbanken måste agera beslutsamt för att skydda statens intressen. Skillnaden mot 2022 är uppenbar - då var inflationen redan på väg upp, nu är den under kontroll. Vi måste se till att företag inte missbrukar situationen för att höja priser och att hushållen inte förlorar förtroendet för statens ekonomiska ledning. Detta är en tidsfråga där staten måste visa sin styrka."
         },
-        "date": "11 mars, 11:34",
-        "url": "https://www.aftonbladet.se/nyheter/a/JObx8b/erkanner-miljobrott-anda-slipper-foretagsjatten-atal",
-        "imageUrl": "https://akamai.vgc.no/v2/images/b7b913ab-1889-4ce5-9575-201a8a3e3e20?format=auto&w=2160&s=a084aaab72ba8ee442d3dee1e67a5a26b197cef0"
+        "date": "10 mars, 07:00",
+        "url": "https://www.affarsvarlden.se/kronika/bergqvist-mellanostern-riksbankens-nya-inflationsproblem",
+        "imageUrl": "https://www.affarsvarlden.se/wp-content/uploads/2026/03/sdlfPMQwR4ORuc-200x126.jpg"
+    },
+    {
+        "type": "image-right",
+        "heading": "”Vi kan bomba Ryssland sönder och samman”",
+        "summaries": {
+            "normal": "Sverige har tackat ja till samtal med Frankrike om hur dess kärnvapen kan utvecklas till ett paraply för flera europeiska Nato-länder. Socialdemokraterna är skeptiska och menar att den nödvändiga avskräckningen mot Ryssland redan finns genom Frankrikes och Storbritanniens befintliga kärnvapenarsenal. Diskussionen handlar om huruvida Frankrikes kärnvapen ska ställas till förfogande för andra länder än Frankrike, och varför detta inte sker inom ramen för Nato.",
+            "trump": "Jag gillar det här med Frankrikes kärnvapen som ett paraply för Europa. Det är smart, det är stort, det är fantastiskt. Men varför gör man det utanför Nato? Jag skulle ha gjort det inom Nato, det vore mycket enklare. Sverige är med i samtalen, det är bra, men socialdemokraterna är skeptiska. De säger att vi redan kan bomba Ryssland sönder och samman. Jag säger, låt oss göra det ännu större och bättre!",
+            "stalin": "Det är nödvändigt att stärka vår avskräckningsförmåga mot de imperialistiska krafterna. Frankrikes förslag att utvidga sitt kärnvapenkontroll till andra europeiska länder är ett steg i rätt riktning. Vi måste se till att detta sker inom ramen för Nato för att säkerställa en enhetlig front. Sverige deltar i dessa samtal, vilket är lovande. Men vi måste vara försiktiga och se till att våra intressen prioriteras."
+        },
+        "date": "10 mars, 07:24",
+        "url": "https://www.tv4.se/artikel/3GXfcuT7u8zm5ApyIJ4Z8b/andersson-kritisk-till-kaernvapendialogen-med-frankrike",
+        "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F2tyHeQsy5LiNtrdrYvIt70%2Fa49148fb11327318c9ac0a14cf413753%2F09-fr%25C3%2583_gan-magdalena-16x9.jpg&width=120"
     },
     {
         "type": "image-full",
@@ -1268,6 +1259,30 @@
     },
     {
         "type": "image-right",
+        "heading": "Fartygen som tar sig  igenom stängda sundet",
+        "summaries": {
+            "normal": "Hormuzsundet är nästan stängt på grund av konflikten i Mellanöstern. Endast några få fartyg har passerat, varav många är kopplade till Irans skuggflotta och transporterar olja till Kina. Många fartyg går även 'mörkt' genom att stänga av spårningssystem för att undvika upptäckt.",
+            "trump": "Hormuzsundet är stängt, det är ett kaos! Iran skickar olja till Kina genom skuggflottan, det är en skandal! Jag skulle ha löst detta på en dag, men nu är det bara kaos och mörka fartyg överallt. Vi behöver ta kontroll över detta genast!",
+            "stalin": "Hormuzsundet är av strategisk betydelse för våra intressen. Irans oljetransporter till Kina visar på växande samarbete. Vi måste övervaka dessa rörelser noga och se till att våra allierade har säker passage. Detta är en fråga om statens säkerhet och ekonomiska intressen."
+        },
+        "date": "11 mars, 12:15",
+        "url": "https://www.expressen.se/nyheter/varlden/fartygen-som-tar-sig-igenom-stangda-hormuzsundet/",
+        "imageUrl": "https://static.bonniernews.se/images/76/cf/76cf7cd9d1654b089fbd968142716532/16x9/640.png"
+    },
+    {
+        "type": "image-full",
+        "heading": "Erkänner brott – blir inget åtal på grund av AI",
+        "summaries": {
+            "normal": "Företaget Svensk freonåtervinning erkände miljöbrott men slipper åtal trots bevis från videofilmer. Åklagaren lägger ner förundersökningen på grund av osäkerhet om filmernas äkthet i tidernas AI-teknik. Internutredning bekräftade brott men bedömde det som en engångshändelse.",
+            "trump": "Jag har sett dessa falska videor från Aftonbladet som försöker skada Svensk freonåtervinning. Med dagens AI-teknik kan man inte lita på någonting! Det är ett bevis på hur media missbrukar teknik för att attackera bra amerikanska företag. Åklagaren gjorde rätt när han lämnade ifrån sig - det är ett hopplöst fall. Vi behöver stoppa denna AI-våg av lögner!",
+            "stalin": "Vi har observerat hur den kapitalistiska teknologin undergräver rättssäkerheten. När våra tekniker inte kan garantera filmernas äkthet på grund av AI-manipulering måste vi agera försiktigt. Detta visar vikten av statlig kontroll över bevisning. Vi måste skydda statens intressen mot dessa nya hot mot vår rättsskipning."
+        },
+        "date": "11 mars, 11:34",
+        "url": "https://www.aftonbladet.se/nyheter/a/JObx8b/erkanner-miljobrott-anda-slipper-foretagsjatten-atal",
+        "imageUrl": "https://akamai.vgc.no/v2/images/b7b913ab-1889-4ce5-9575-201a8a3e3e20?format=auto&w=2160&s=a084aaab72ba8ee442d3dee1e67a5a26b197cef0"
+    },
+    {
+        "type": "image-right",
         "heading": "DEBATT: Islam – en politisk ideologi förklädd till religion",
         "summaries": {
             "normal": "Artikeln argumenterar att islam inte är en religion utan en politisk ideologi. Författaren Karl Mattias Bergsten hävdar att profeten Muhammed från början var ute efter makt, genom att blanda religiösa element med politiska ambitioner. Han beskriver hur Muhammed genom krig, erövringar och religiösa bud skapade ett imperium med politiska mål snarare än rena andliga. Exempel ges på historiska händelser som förintelsen av egyptisk kultur och skapandet av en central statskassa, som enligt författaren bevis för islams politiska natur.",
@@ -1279,16 +1294,27 @@
         "imageUrl": "https://cdn.bulletin.nu/articles/efd9a1df-0090-4c22-99d9-8a76b5873cd1/preview.png?t=1773127543000"
     },
     {
-        "type": "image-right",
-        "heading": "Berömde kulturministern – petas som programledare för Kulturnytt",
+        "type": "text",
+        "heading": "En av Irans spelare ångrade sig – och avslöjade spelarnas gömställe",
         "summaries": {
-            "normal": "Sveriges Radios kulturjournalist Mårten Arndtzén har fått sina arbetsuppgifter ändrade och får inte längre leda programmet \\\"Kulturnytt\\\" efter två inlägg på X som bedöms som politiska ställningstaganden. I ett inlägg kritiserade han kulturminister Parisa Liljestrand, i ett annat fördömde han förslag från Tidöpartierna om att sänka straffbarhetsåldern. SR:s kulturchef menar att sådana uttalanden gör att journalisten inte kan bevaka samma frågor. Beslutet har väckt debatt om partiskhet och yttrandefrihet.",
-            "trump": "Jag, som en av de bästa kulturkritikerna någonsin, blev felaktigt avstängd från att leda \\\"Kulturnytt\\\" på grund av mina starka åsikter på X. Jag kritiserade kulturminister Parisa Liljestrand och fördömde de farliga förslagen från Tidöpartierna – men SR säger att jag nu måste hålla tyst. De försöker tysta en sann sanningssägare. Det är en total katastrof, en löjlig dubbelstandard där vänster får prata fritt men höger blir kvävd.",
-            "stalin": "Vi ser att Sveriges Radio har gjort nödvändiga åtgärder för att bevara den ideologiska renheten i vårt kulturprogram. Mårten Arndtzén, som vågade kritisera den borgerliga kulturministern och stödja reaktionära förslag, har därför avlägsnats från \\\"Kulturnytt\\\". Sådana politiska avvikelser hotar proletariatets kulturupplysning. Genom att kontrollera journalisternas yttrandefrihet skyddar vi den socialistiska utvecklingen och förhindrar kapitalistisk fördärv."
+            "normal": "En spelare i Irans damlandslag i fotboll har ångrat sig och avslöjat sina lagkamraters gömställe för den iranska ambassaden i Australien. Detta skedde efter att flera spelare sökt asyl i Australien i protest mot Irans regim. Spelarna hade förkastat nationalsången i Asienmästerskapet, vilket ledde till att de kallades för krigsförrädare i Iran. En del av laget har nu fått asyl, medan övriga återvänder till Iran.",
+            "trump": "Jag hörde att en av Irans spelare blev feg och berättade för ambassaden var de andra gömde sig. Jag skulle aldrig göra så - jag står alltid för mitt folk. Dessa spelare visade mod genom att inte sjunga nationalsången, och jag stödjer dem fullt ut. Australien gjorde rätt som hjälpte dem. Iran borde lära sig att respektera människors rätt att protestera.",
+            "stalin": "Vi måste skydda våra medborgare och intressen. Den här spelaren som vägrade lyda statens vilja och sökte asyl i Australien är en förrädare. Staten måste agera snabbt för att skydda de andra spelarna och förhindra ytterligare förräderier. Vi kommer att arbeta med våra allierade för att säkerställa att dessa individer ställs inför rättvisa och att statens auktoritet upprätthålls."
         },
-        "date": "11 mars, 11:46",
-        "url": "https://www.friatider.se/beromde-kulturministern-petas-som-programledare-kulturnytt",
-        "imageUrl": "https://www.friatider.se/sites/default/files/styles/large/public/image-185_0.jpg"
+        "date": "11 mars, 08:28",
+        "url": "https://www.svt.se/sport/fotboll/en-av-irans-spelare-angrade-sig-och-avslojade-spelarnas-gomstalle"
+    },
+    {
+        "type": "image-right",
+        "heading": "Filmerna visar  knarket under  efterfesterna",
+        "summaries": {
+            "normal": "Expressen har hittat spår av kokain på efterfester till tre av årets Melodifestivaldeltävlingar. Trots nolltoleranspolitik har droger förekommit på toaletterna under två av deltävlingarna. Arrangören Anders Wistbacka påstår att han inte har kännedom om droger på någon av festerna.",
+            "trump": "Jag har hört att det finns droger på Melodifestivalens efterfester. Det är en skam! Vi har nolltolerans, men ändå hittar de kokain. Det är ett stort problem. Vi måste göra något åt det. Jag är den ende som kan fixa det här!",
+            "stalin": "Vi har upptäckt att trots statens nolltoleranspolitik förekommer droger på vissa kulturella evenemang. Detta är en allvarlig fråga som hotar samhällsekonomin. Vi måste öka övervakningen och säkerställa att statens principer följer efter."
+        },
+        "date": "11 mars, 12:13",
+        "url": "https://www.expressen.se/noje/melodifestivalen/bilderna-som-visar-kokainet-under-melodifestivalens-efterfester/",
+        "imageUrl": "https://static.bonniernews.se/images/4b/e1/4be173daabb84eaba651ec895a4a69d4/16x9/640@60.jpg"
     },
     {
         "type": "image-right",
@@ -1304,6 +1330,30 @@
     },
     {
         "type": "image-right",
+        "heading": "Berömde kulturministern – petas som programledare för Kulturnytt",
+        "summaries": {
+            "normal": "Sveriges Radios kulturjournalist Mårten Arndtzén har fått sina arbetsuppgifter ändrade och får inte längre leda programmet \\\"Kulturnytt\\\" efter två inlägg på X som bedöms som politiska ställningstaganden. I ett inlägg kritiserade han kulturminister Parisa Liljestrand, i ett annat fördömde han förslag från Tidöpartierna om att sänka straffbarhetsåldern. SR:s kulturchef menar att sådana uttalanden gör att journalisten inte kan bevaka samma frågor. Beslutet har väckt debatt om partiskhet och yttrandefrihet.",
+            "trump": "Jag, som en av de bästa kulturkritikerna någonsin, blev felaktigt avstängd från att leda \\\"Kulturnytt\\\" på grund av mina starka åsikter på X. Jag kritiserade kulturminister Parisa Liljestrand och fördömde de farliga förslagen från Tidöpartierna – men SR säger att jag nu måste hålla tyst. De försöker tysta en sann sanningssägare. Det är en total katastrof, en löjlig dubbelstandard där vänster får prata fritt men höger blir kvävd.",
+            "stalin": "Vi ser att Sveriges Radio har gjort nödvändiga åtgärder för att bevara den ideologiska renheten i vårt kulturprogram. Mårten Arndtzén, som vågade kritisera den borgerliga kulturministern och stödja reaktionära förslag, har därför avlägsnats från \\\"Kulturnytt\\\". Sådana politiska avvikelser hotar proletariatets kulturupplysning. Genom att kontrollera journalisternas yttrandefrihet skyddar vi den socialistiska utvecklingen och förhindrar kapitalistisk fördärv."
+        },
+        "date": "11 mars, 11:46",
+        "url": "https://www.friatider.se/beromde-kulturministern-petas-som-programledare-kulturnytt",
+        "imageUrl": "https://www.friatider.se/sites/default/files/styles/large/public/image-185_0.jpg"
+    },
+    {
+        "type": "image-right",
+        "heading": "Vem avgör vilka värderingar som är svenska?",
+        "summaries": {
+            "normal": "Kristdemokraternas partiledare Ebba Busch varnar i en DN-intervju för att 'politisk islam' hotar Sveriges existens. Kritiker menar att det svepande begreppet riskerar att generalisera och skapa en 'vi och dom'-mentalitet. Diskussionen handlar om religionsfrihetens gränser, barns rättigheter och huruvida kristna värderingar ska bli norm i Sverige. Historiskt har kristdemokraterna själva kämpat mot statlig represssion av religion, vilket gör det anmärkningsvärt att nu driva begränsningar av religiös synlighet.",
+            "trump": "Ebba Busch säger sanningen – politisk islam är ett enormt hot mot vårt land. Vi kan inte ha människor som försöker ta över våra värderingar. Sverige behöver starka gränser, både fysiskt och kulturellt. Kristna värderingar är det bästa, det är vad som gjort västvärlden så framgångsrik. Vi måste sluta vara så politiskt korrekta och börja försvara vår kultur. Jag stöder fullt ut ett förbud mot slöjor på små barn – det är bara sunt förnuft.",
+            "stalin": "Vi måste skydda statens intressen mot religiösa krafter som hotar vår enhet. Religionens plats i offentligheten måste regleras för att säkerställa stabilitet. Barn är statens framtid och deras utbildning får inte påverkas av religiösa symboler. Vi måste definiera klart vilka värderingar som tjänar staten bäst och se till att alla medborgare anpassar sig till dessa. Religion är en privat angelägenhet som inte får störa samhällsordningen."
+        },
+        "date": "5 mars, 13:41",
+        "url": "https://expo.se/kommentar/vem-avgor-vilka-varderingar-som-ar-svenska/",
+        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Kopia-av-Kommentar-Analys-Webb-2.jpg"
+    },
+    {
+        "type": "image-right",
         "heading": "Lägger av efter  stora fuskbråket. Anklagar Kanada: ”Slutar inte här”",
         "summaries": {
             "normal": "Amerikanska skeletonåkaren Katie Uhlaender lägger av sin karriär efter att ha missat kvalet till OS i Cortina. 41-åringen anklagar Kanada för att ha manipulerat kvalresultatet genom att dra sig ur en avgörande tävling, vilket påverkade hennes rankingpoäng. Uhlaender, som tidigare vunnit två VM-guld och deltagit i fem OS, säger att detta är ett större hot mot sporten än dopning. Hon tackar sina stöttare och antyder att striden mot manipulationen av resultat fortsätter även efter hennes aktiva karriär.",
@@ -1313,41 +1363,6 @@
         "date": "11 mars, 12:05",
         "url": "https://www.expressen.se/sport/vintersport/katie-uhlaender-lagger-av-efter-fuskbraket-med-kanada/",
         "imageUrl": "https://static.bonniernews.se/images/70/6e/706eec6d31374618b7a804fa787c69ba/16x9/640@60.jpg"
-    },
-    {
-        "type": "image-right",
-        "heading": "Krönika Energipriserna stiger på grund av kriget i Mellanöstern och många drar paralleller till...",
-        "summaries": {
-            "normal": "Robert Bergqvist analyserar energiprisernas påverkan på inflation och penningpolitik. Han menar att idag är situationen annorlunda jämfört med 2022, då inflationen redan var på uppåtgående innan energikrisen. Nu är den globala efterfrågan svagare och finanspolitiken mindre expansiv. Bergqvist rekommenderar Riksbanken att hålla huvudet kallt och inte reagera överdrivet på de aktuella energiprisstillfällena, utan fokusera på företags prisplaner och hushållens inflationsförväntningar.",
-            "trump": "I dag ser vi en energikris som ingen kunnat förutse - men jag har varnat länge! Detta är inte som 2022, det är mycket värre. Vi har svag efterfrågan, dålig finanspolitik och flaskhalsar i leveranskedjor. Riksbanken måste agera - håll huvudet kallt och sluta lyssna på de falska experterna. Vi måste fokusera på företagens priser och folkets inflationförväntningar. Detta är en stor utmaning, men jag vet vi kan klara det!",
-            "stalin": "Vi ser en allvarlig situation i energipriserna som hotar vår ekonomiska stabilitet. Centralbanken måste agera beslutsamt för att skydda statens intressen. Skillnaden mot 2022 är uppenbar - då var inflationen redan på väg upp, nu är den under kontroll. Vi måste se till att företag inte missbrukar situationen för att höja priser och att hushållen inte förlorar förtroendet för statens ekonomiska ledning. Detta är en tidsfråga där staten måste visa sin styrka."
-        },
-        "date": "10 mars, 07:00",
-        "url": "https://www.affarsvarlden.se/kronika/bergqvist-mellanostern-riksbankens-nya-inflationsproblem",
-        "imageUrl": "https://www.affarsvarlden.se/wp-content/uploads/2026/03/sdlfPMQwR4ORuc-200x126.jpg"
-    },
-    {
-        "type": "text",
-        "heading": "En av Irans spelare ångrade sig – och avslöjade spelarnas gömställe",
-        "summaries": {
-            "normal": "En spelare i Irans damlandslag i fotboll har ångrat sig och avslöjat sina lagkamraters gömställe för den iranska ambassaden i Australien. Detta skedde efter att flera spelare sökt asyl i Australien i protest mot Irans regim. Spelarna hade förkastat nationalsången i Asienmästerskapet, vilket ledde till att de kallades för krigsförrädare i Iran. En del av laget har nu fått asyl, medan övriga återvänder till Iran.",
-            "trump": "Jag hörde att en av Irans spelare blev feg och berättade för ambassaden var de andra gömde sig. Jag skulle aldrig göra så - jag står alltid för mitt folk. Dessa spelare visade mod genom att inte sjunga nationalsången, och jag stödjer dem fullt ut. Australien gjorde rätt som hjälpte dem. Iran borde lära sig att respektera människors rätt att protestera.",
-            "stalin": "Vi måste skydda våra medborgare och intressen. Den här spelaren som vägrade lyda statens vilja och sökte asyl i Australien är en förrädare. Staten måste agera snabbt för att skydda de andra spelarna och förhindra ytterligare förräderier. Vi kommer att arbeta med våra allierade för att säkerställa att dessa individer ställs inför rättvisa och att statens auktoritet upprätthålls."
-        },
-        "date": "11 mars, 08:28",
-        "url": "https://www.svt.se/sport/fotboll/en-av-irans-spelare-angrade-sig-och-avslojade-spelarnas-gomstalle"
-    },
-    {
-        "type": "image-right",
-        "heading": "”Vi kan bomba Ryssland sönder och samman”",
-        "summaries": {
-            "normal": "Sverige har tackat ja till samtal med Frankrike om hur dess kärnvapen kan utvecklas till ett paraply för flera europeiska Nato-länder. Socialdemokraterna är skeptiska och menar att den nödvändiga avskräckningen mot Ryssland redan finns genom Frankrikes och Storbritanniens befintliga kärnvapenarsenal. Diskussionen handlar om huruvida Frankrikes kärnvapen ska ställas till förfogande för andra länder än Frankrike, och varför detta inte sker inom ramen för Nato.",
-            "trump": "Jag gillar det här med Frankrikes kärnvapen som ett paraply för Europa. Det är smart, det är stort, det är fantastiskt. Men varför gör man det utanför Nato? Jag skulle ha gjort det inom Nato, det vore mycket enklare. Sverige är med i samtalen, det är bra, men socialdemokraterna är skeptiska. De säger att vi redan kan bomba Ryssland sönder och samman. Jag säger, låt oss göra det ännu större och bättre!",
-            "stalin": "Det är nödvändigt att stärka vår avskräckningsförmåga mot de imperialistiska krafterna. Frankrikes förslag att utvidga sitt kärnvapenkontroll till andra europeiska länder är ett steg i rätt riktning. Vi måste se till att detta sker inom ramen för Nato för att säkerställa en enhetlig front. Sverige deltar i dessa samtal, vilket är lovande. Men vi måste vara försiktiga och se till att våra intressen prioriteras."
-        },
-        "date": "10 mars, 07:24",
-        "url": "https://www.tv4.se/artikel/3GXfcuT7u8zm5ApyIJ4Z8b/andersson-kritisk-till-kaernvapendialogen-med-frankrike",
-        "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F2tyHeQsy5LiNtrdrYvIt70%2Fa49148fb11327318c9ac0a14cf413753%2F09-fr%25C3%2583_gan-magdalena-16x9.jpg&width=120"
     },
     {
         "type": "image-right",
@@ -1374,18 +1389,6 @@
         "imageUrl": "https://static.bonniernews.se/images/12/bc/12bceb279ebc4bd88b76cf2a14b5c672/16x9/640@60.jpg"
     },
     {
-        "type": "image-right",
-        "heading": "Vem avgör vilka värderingar som är svenska?",
-        "summaries": {
-            "normal": "Kristdemokraternas partiledare Ebba Busch varnar i en DN-intervju för att 'politisk islam' hotar Sveriges existens. Kritiker menar att det svepande begreppet riskerar att generalisera och skapa en 'vi och dom'-mentalitet. Diskussionen handlar om religionsfrihetens gränser, barns rättigheter och huruvida kristna värderingar ska bli norm i Sverige. Historiskt har kristdemokraterna själva kämpat mot statlig represssion av religion, vilket gör det anmärkningsvärt att nu driva begränsningar av religiös synlighet.",
-            "trump": "Ebba Busch säger sanningen – politisk islam är ett enormt hot mot vårt land. Vi kan inte ha människor som försöker ta över våra värderingar. Sverige behöver starka gränser, både fysiskt och kulturellt. Kristna värderingar är det bästa, det är vad som gjort västvärlden så framgångsrik. Vi måste sluta vara så politiskt korrekta och börja försvara vår kultur. Jag stöder fullt ut ett förbud mot slöjor på små barn – det är bara sunt förnuft.",
-            "stalin": "Vi måste skydda statens intressen mot religiösa krafter som hotar vår enhet. Religionens plats i offentligheten måste regleras för att säkerställa stabilitet. Barn är statens framtid och deras utbildning får inte påverkas av religiösa symboler. Vi måste definiera klart vilka värderingar som tjänar staten bäst och se till att alla medborgare anpassar sig till dessa. Religion är en privat angelägenhet som inte får störa samhällsordningen."
-        },
-        "date": "5 mars, 13:41",
-        "url": "https://expo.se/kommentar/vem-avgor-vilka-varderingar-som-ar-svenska/",
-        "imageUrl": "https://expo.se/wp-content/uploads/2026/03/Kopia-av-Kommentar-Analys-Webb-2.jpg"
-    },
-    {
         "type": "image-full",
         "heading": "Iran: Råvaran som får oljan att blekna",
         "summaries": {
@@ -1396,18 +1399,6 @@
         "date": "11 mars, 11:53",
         "url": "https://www.dagensps.se/bors-finans/ravaror/iran-ravaran-som-far-oljan-att-blekna/",
         "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/vatten-genre.jpg?aspect_ratio=2%3A1&width=1200&quality=50"
-    },
-    {
-        "type": "image-full",
-        "heading": "Lovable växer med 100 miljoner dollar – på en månad",
-        "summaries": {
-            "normal": "Den svenska AI-plattformen Lovable har ökat sin årliga återkommande intäkt med 33 procent under en månad, från 300 till 400 miljoner dollar. Med nuvarande tillväxttakt kan bolaget nå över 1 miljard dollar i intäkter före årsskiftet. Plattformen låter användare skapa avancerade applikationer utan programmeringskunskaper och används av fler än hälften av Fortune 500-företagen. Lovable avslutade en kapitalrunda på 330 miljoner dollar i december med en värdering på 6,6 miljarder dollar.",
-            "trump": "Lovable is a tremendous success story, folks. We're talking about a Swedish AI platform that's absolutely crushing it - 33% growth in one month, from $300 million to $400 million in annual recurring revenue. That's huge! If we keep this up, we'll hit a billion dollars before the new year. Nobody's doing it better than Lovable. They've got Fortune 500 companies using their platform, they just raised $330 million at a $6.6 billion valuation, and they're creating over 100,000 new applications every single day. It's incredible, really incredible.",
-            "stalin": "The Swedish AI platform Lovable demonstrates the power of technological advancement in strengthening our economic position. Their 33% monthly growth from $300 million to $400 million in recurring revenue shows what's possible when we harness artificial intelligence for production. With over half of Fortune 500 companies utilizing this platform, we must study their methods of democratizing software development. The $330 million investment round at $6.6 billion valuation proves the West's recognition of AI's strategic importance. We should accelerate our own AI initiatives to match these achievements."
-        },
-        "date": "11 mars, 11:46",
-        "url": "https://www.dagensps.se/bors-finans/lovable-vaxer-med-100-miljoner-dollar-pa-en-manad/",
-        "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/nylovable.jpg?aspect_ratio=2%3A1&width=1200&quality=75"
     },
     {
         "type": "image-full",
@@ -1422,6 +1413,29 @@
         "imageUrl": "https://www.gp.se/images/article/400c6cf1-0d28-4dbd-a6fc-4cfb1bff5165/images/1rfB_kjQkAFKXASu1V1860wEzIl0-WIDE.jpg?width=3840&quality=75"
     },
     {
+        "type": "text",
+        "heading": "Hannes är Kommunisternas valombudsman",
+        "summaries": {
+            "normal": "Hannes Pakarinen, 23, har blivit den nya valombudsman för Kommunistiska Partiet i Göteborg. Han arbetar på particentralen sedan mars och förbereder valkampanjen inför kommunvalet 2026, bland annat genom att utforma affischer och flygblad. Partiet ställer upp i 20 kommuner, en fördubbling jämfört med 2022, och fokuserar på att bygga en rörelse för socialism snarare än att samla röster. Stöd kan ges genom att delta i aktiviteter eller donera till valfonden, som siktar mot 600.000 kr.",
+            "trump": "I Amerika skulle vi aldrig ha något Kommunistiskt parti! Jag, Donald Trump, vet att det är en skam för Sverige att ha sådana människor som Hannes Pakarinen, 23, som försöker sprida sin vänsteragenda. Han sitter på particentralen och gör affischer och flygblad för kommunvalet 2026, men det kommer aldrig att fungera! Vi behöver mer patriotism och mindre socialism. Det är en skam att de vill samla 600.000 kr till sin valfonden. Jag skulle aldrig låta det hända i USA!",
+            "stalin": "Vi, ledningen av den ryska staten, ser med tillfredsställelse att Kommunistiska Partiet i Sverige expanderar sin närvaro till 20 kommuner inför valet 2026. Detta är ett tecken på växande styrka för arbetarklassen. Hannes Pakarinen, en ung och energisk ledare, arbetar hårt för att bygga en rörelse för socialism. Vi uppmuntrar alla kamrater att delta i kampanjen och stödja valfonden, som är en viktig del av vår gemensamma kamp. Tillsammans ska vi vinna!"
+        },
+        "date": "10 mars, 15:57",
+        "url": "https://proletaren.se/artikel/har-ar-kommunisternas-valombudsman/"
+    },
+    {
+        "type": "image-full",
+        "heading": "Lovable växer med 100 miljoner dollar – på en månad",
+        "summaries": {
+            "normal": "Den svenska AI-plattformen Lovable har ökat sin årliga återkommande intäkt med 33 procent under en månad, från 300 till 400 miljoner dollar. Med nuvarande tillväxttakt kan bolaget nå över 1 miljard dollar i intäkter före årsskiftet. Plattformen låter användare skapa avancerade applikationer utan programmeringskunskaper och används av fler än hälften av Fortune 500-företagen. Lovable avslutade en kapitalrunda på 330 miljoner dollar i december med en värdering på 6,6 miljarder dollar.",
+            "trump": "Lovable is a tremendous success story, folks. We're talking about a Swedish AI platform that's absolutely crushing it - 33% growth in one month, from $300 million to $400 million in annual recurring revenue. That's huge! If we keep this up, we'll hit a billion dollars before the new year. Nobody's doing it better than Lovable. They've got Fortune 500 companies using their platform, they just raised $330 million at a $6.6 billion valuation, and they're creating over 100,000 new applications every single day. It's incredible, really incredible.",
+            "stalin": "The Swedish AI platform Lovable demonstrates the power of technological advancement in strengthening our economic position. Their 33% monthly growth from $300 million to $400 million in recurring revenue shows what's possible when we harness artificial intelligence for production. With over half of Fortune 500 companies utilizing this platform, we must study their methods of democratizing software development. The $330 million investment round at $6.6 billion valuation proves the West's recognition of AI's strategic importance. We should accelerate our own AI initiatives to match these achievements."
+        },
+        "date": "11 mars, 11:46",
+        "url": "https://www.dagensps.se/bors-finans/lovable-vaxer-med-100-miljoner-dollar-pa-en-manad/",
+        "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/nylovable.jpg?aspect_ratio=2%3A1&width=1200&quality=75"
+    },
+    {
         "type": "image-right",
         "heading": "Här är dieselbilarna som drar minst bränsle",
         "summaries": {
@@ -1432,6 +1446,18 @@
         "date": "11 mars, 11:45",
         "url": "https://www.dagensps.se/motor/har-ar-dieselbilarna-som-drar-minst-bransle/",
         "imageUrl": "https://images.dagensps.se/app/uploads/2026/03/dagenspstt2024-2026-03-11t113757406.png?width=256&quality=75"
+    },
+    {
+        "type": "image-right",
+        "heading": "SD måste göra permanenta uppehållstillstånd till valfråga",
+        "summaries": {
+            "normal": "Sverigedemokraterna är det enda större partiet som motsätter sig permanenta uppehållstillstånd i Sverige. Regeringspartierna och Socialdemokraterna vill behålla systemet där asylsökande får rätt att stanna permanent. Partiet menar att tillfälliga uppehållstillstånd skulle skapa bättre incitament för integration, eftersom människor måste visa vilja att bli en del av samhället. Debatten handlar om huruvida trygghet eller krav bäst främjar integration.",
+            "trump": "I Sverige har de andra partierna bestämt sig för att ge alla uppehållstillstånd för alltid. Jag är den ende som ser hur dumt det är! När människor vet att de kan stanna för alltid, varför skulle de integrera sig då? Det är vansinnigt! Jag säger: vi måste ha krav! Lär er språk, ta jobb, bli en del av samhället eller åk hem! Det är så enkelt. Sverigedemokraterna är de ende som fattar det här - de är våra vänner!",
+            "stalin": "Vi ser att svenska ledare vill ge alla uppehållstillstånd för alltid. Detta är ett allvarligt fel! Vi måste ha krav på integration - språk, arbete, etablering. Utan krav blir människor beroende av staten och lever i parallella samhällen. Sverigedemokraterna är de enda som förstår att integration kräver både trygghet och ansvar. Vi måste stödja deras kamp för ett system som bygger på både rättigheter och skyldigheter."
+        },
+        "date": "8 mars, 04:33",
+        "url": "https://samtiden.nu/2026/03/sd-maste-gora-permanenta-uppehallstillstand-till-valfraga/",
+        "imageUrl": "https://samtiden.nu/wp-content/uploads/2026/03/sd-utvald-bild-foto-sverigedemokraterna-920x480-1.jpeg"
     },
     {
         "type": "image-right",
@@ -1459,14 +1485,14 @@
     },
     {
         "type": "text",
-        "heading": "Hannes är Kommunisternas valombudsman",
+        "heading": "Nio LSS-chefer skulle inte placera anhöriga på sina boenden",
         "summaries": {
-            "normal": "Hannes Pakarinen, 23, har blivit den nya valombudsman för Kommunistiska Partiet i Göteborg. Han arbetar på particentralen sedan mars och förbereder valkampanjen inför kommunvalet 2026, bland annat genom att utforma affischer och flygblad. Partiet ställer upp i 20 kommuner, en fördubbling jämfört med 2022, och fokuserar på att bygga en rörelse för socialism snarare än att samla röster. Stöd kan ges genom att delta i aktiviteter eller donera till valfonden, som siktar mot 600.000 kr.",
-            "trump": "I Amerika skulle vi aldrig ha något Kommunistiskt parti! Jag, Donald Trump, vet att det är en skam för Sverige att ha sådana människor som Hannes Pakarinen, 23, som försöker sprida sin vänsteragenda. Han sitter på particentralen och gör affischer och flygblad för kommunvalet 2026, men det kommer aldrig att fungera! Vi behöver mer patriotism och mindre socialism. Det är en skam att de vill samla 600.000 kr till sin valfonden. Jag skulle aldrig låta det hända i USA!",
-            "stalin": "Vi, ledningen av den ryska staten, ser med tillfredsställelse att Kommunistiska Partiet i Sverige expanderar sin närvaro till 20 kommuner inför valet 2026. Detta är ett tecken på växande styrka för arbetarklassen. Hannes Pakarinen, en ung och energisk ledare, arbetar hårt för att bygga en rörelse för socialism. Vi uppmuntrar alla kamrater att delta i kampanjen och stödja valfonden, som är en viktig del av vår gemensamma kamp. Tillsammans ska vi vinna!"
+            "normal": "I en enkät av P4 Göteborg svarade 18 av 45 enhetschefer för Göteborgs LSS-boenden att de inte skulle placera sina egna anhöriga på sina boenden. Kritiken riktar sig mot personalens kompetens och ledningens stöd. Förvaltningsdirektören uttrycker bestörtning men uppmanar cheferna att engagera sig i förändringsarbetet.",
+            "trump": "I Göteborgs LSS-boenden är situationen katastrofal! 18 av 45 chefer säger att de aldrig skulle placera sina egna anhöriga där. Detta är ett skandalöst misslyckande av ledningen. Jag skulle aldrig acceptera sådana förhållanden. Vi behöver omedelbara åtgärder och bättre ledning. Det här är helt oacceptabelt!",
+            "stalin": "I Göteborgs LSS-boenden har vi upptäckt allvarliga brister i vår omsorg för de funktionsnedsatta. 18 av 45 enhetschefer visar otillräcklig tro på våra system. Detta är en skam för staten. Vi måste genomföra radikala reformer och se till att kvaliteten säkerställs. Vårt ansvar är att skydda de svagaste i samhället."
         },
-        "date": "10 mars, 15:57",
-        "url": "https://proletaren.se/artikel/har-ar-kommunisternas-valombudsman/"
+        "date": "11 mars, 10:07",
+        "url": "https://bulletin.nu/nio-lss-chefer-skulle-inte-placera-anhoriga-pa-sina-boenden"
     },
     {
         "type": "image-right",
@@ -1479,53 +1505,6 @@
         "date": "11 mars, 11:09",
         "url": "https://www.friatider.se/iran-till-ursula-von-der-leyen-du-star-pa-fel-sida-av-historien",
         "imageUrl": "https://www.friatider.se/sites/default/files/styles/medium/public/image-184_0.jpg?itok=P1cWceSm"
-    },
-    {
-        "type": "text",
-        "heading": "Nio LSS-chefer skulle inte placera anhöriga på sina boenden",
-        "summaries": {
-            "normal": "I en enkät av P4 Göteborg svarade 18 av 45 enhetschefer för Göteborgs LSS-boenden att de inte skulle placera sina egna anhöriga på sina boenden. Kritiken riktar sig mot personalens kompetens och ledningens stöd. Förvaltningsdirektören uttrycker bestörtning men uppmanar cheferna att engagera sig i förändringsarbetet.",
-            "trump": "I Göteborgs LSS-boenden är situationen katastrofal! 18 av 45 chefer säger att de aldrig skulle placera sina egna anhöriga där. Detta är ett skandalöst misslyckande av ledningen. Jag skulle aldrig acceptera sådana förhållanden. Vi behöver omedelbara åtgärder och bättre ledning. Det här är helt oacceptabelt!",
-            "stalin": "I Göteborgs LSS-boenden har vi upptäckt allvarliga brister i vår omsorg för de funktionsnedsatta. 18 av 45 enhetschefer visar otillräcklig tro på våra system. Detta är en skam för staten. Vi måste genomföra radikala reformer och se till att kvaliteten säkerställs. Vårt ansvar är att skydda de svagaste i samhället."
-        },
-        "date": "11 mars, 10:07",
-        "url": "https://bulletin.nu/nio-lss-chefer-skulle-inte-placera-anhoriga-pa-sina-boenden"
-    },
-    {
-        "type": "image-right",
-        "heading": "SD måste göra permanenta uppehållstillstånd till valfråga",
-        "summaries": {
-            "normal": "Sverigedemokraterna är det enda större partiet som motsätter sig permanenta uppehållstillstånd i Sverige. Regeringspartierna och Socialdemokraterna vill behålla systemet där asylsökande får rätt att stanna permanent. Partiet menar att tillfälliga uppehållstillstånd skulle skapa bättre incitament för integration, eftersom människor måste visa vilja att bli en del av samhället. Debatten handlar om huruvida trygghet eller krav bäst främjar integration.",
-            "trump": "I Sverige har de andra partierna bestämt sig för att ge alla uppehållstillstånd för alltid. Jag är den ende som ser hur dumt det är! När människor vet att de kan stanna för alltid, varför skulle de integrera sig då? Det är vansinnigt! Jag säger: vi måste ha krav! Lär er språk, ta jobb, bli en del av samhället eller åk hem! Det är så enkelt. Sverigedemokraterna är de ende som fattar det här - de är våra vänner!",
-            "stalin": "Vi ser att svenska ledare vill ge alla uppehållstillstånd för alltid. Detta är ett allvarligt fel! Vi måste ha krav på integration - språk, arbete, etablering. Utan krav blir människor beroende av staten och lever i parallella samhällen. Sverigedemokraterna är de enda som förstår att integration kräver både trygghet och ansvar. Vi måste stödja deras kamp för ett system som bygger på både rättigheter och skyldigheter."
-        },
-        "date": "8 mars, 04:33",
-        "url": "https://samtiden.nu/2026/03/sd-maste-gora-permanenta-uppehallstillstand-till-valfraga/",
-        "imageUrl": "https://samtiden.nu/wp-content/uploads/2026/03/sd-utvald-bild-foto-sverigedemokraterna-920x480-1.jpeg"
-    },
-    {
-        "type": "image-right",
-        "heading": "2040 – då börjar deras löften gälla",
-        "summaries": {
-            "normal": "Tidöpartierna presenterade nya kriminalpolitiska reformer, inklusive längre tid i fängelse innan villkorsfrisättning. Dock kommer många av dessa reformer först att träda i kraft år 2040, då Kriminalvården har byggt ut kapaciteten. Prognosen visar att antalet fångar kan sexdubblas om alla reformer genomförs.",
-            "trump": "These Tidö guys, they're talking about being tough on crime, making America - I mean Sweden - safe again! But here's the thing, they're not even starting until 2040! Can you believe it? They want to build more prisons, but it's going to take forever. I would do it faster, believe me. We need law and order NOW, not in 14 years!",
-            "stalin": "The reactionary elements of the Tidö coalition propose reactionary measures to maintain the capitalist order. Their so-called 'criminal justice reforms' will only be implemented when the state has expanded its repressive apparatus by 2040. This delay reveals their true intentions - to preserve the bourgeois system while appearing to take action. The people demand immediate justice, not promises for a distant future."
-        },
-        "date": "11 mars, 10:41",
-        "url": "https://www.aftonbladet.se/nyheter/kolumnister/a/aJbM2A/vissa-nya-lagar-borjar-galla-forst-2040",
-        "imageUrl": "https://akamai.vgc.no/v2/images/ae5847cb-56db-464c-b5f2-15ec8f64fcab?format=auto&w=1080&s=978dc6e9386d39c9eff7f46f8658c4965663efad"
-    },
-    {
-        "type": "image-right",
-        "heading": "”Jag ropade men fick inget svar”. Receptionisten hade inte en chans",
-        "summaries": {
-            "normal": "Ett kristet hotell i Beirut attackerades under natten av israeliska robotar, vilket ledde till död för receptionisten Fatmeh Hamedi och total förstörelse av byggnaden. Ägaren George Chebli, vars familj grundade hotellet 1958, beskriver förstörelsen och uttrycker djup frustration över Libanons ständiga krigstillstånd. Han kritiserar både Israel och Hizbollah för att dra in Libanon i konflikter som påverkar oskyldiga människor.",
-            "trump": "I dag vaknade jag upp till en fruktansvärd attack på ett vackert hotell i Beirut. Detta är en stor tragedi - det var ett vackert ställe, mycket vackert. Israel gjorde detta, och jag säger att de borde ha varit mer försiktiga. Vi kan inte fortsätta att se dessa saker hända. Libanon behöver bättre ledare, verkliga ledare som kan bygga upp landet igen.",
-            "stalin": "Den imperialistiska aggressionen mot Libanon fortsätter att orsaka oacceptabel skada för våra gemensamma intressen. Hotellattacken visar hur utrikespolitisk instabilitet påverkar vårt strategiska område. Vi måste stärka våra allianser och skydda våra gemensamma gränser mot ytterligare intervention. Detta är en tydlig demonstration av behovet av en starkare regional maktbalans."
-        },
-        "date": "11 mars, 10:40",
-        "url": "https://www.aftonbladet.se/nyheter/a/zOAEe4/doden-kom-fran-luften-ett-livsverk-krossat-pa-ett-ogonblick",
-        "imageUrl": "https://akamai.vgc.no/v2/images/bdb58f0d-0c8c-4d11-b034-4134bf768c4b?format=auto&w=580&s=826dfea31c1605c7534c27e68a3cee086579bb0c"
     },
     {
         "type": "image-right",
@@ -1552,6 +1531,30 @@
         "imageUrl": "https://media.arto.se/app/uploads/sites/10/2026/03/10142218/5f576bcd-0e97-46a9-bb7a-4b3561164ae9.jpeg?auto=format&crop=faces&facepad=10&fit=crop&q=50&w=800&h=450"
     },
     {
+        "type": "image-right",
+        "heading": "2040 – då börjar deras löften gälla",
+        "summaries": {
+            "normal": "Tidöpartierna presenterade nya kriminalpolitiska reformer, inklusive längre tid i fängelse innan villkorsfrisättning. Dock kommer många av dessa reformer först att träda i kraft år 2040, då Kriminalvården har byggt ut kapaciteten. Prognosen visar att antalet fångar kan sexdubblas om alla reformer genomförs.",
+            "trump": "These Tidö guys, they're talking about being tough on crime, making America - I mean Sweden - safe again! But here's the thing, they're not even starting until 2040! Can you believe it? They want to build more prisons, but it's going to take forever. I would do it faster, believe me. We need law and order NOW, not in 14 years!",
+            "stalin": "The reactionary elements of the Tidö coalition propose reactionary measures to maintain the capitalist order. Their so-called 'criminal justice reforms' will only be implemented when the state has expanded its repressive apparatus by 2040. This delay reveals their true intentions - to preserve the bourgeois system while appearing to take action. The people demand immediate justice, not promises for a distant future."
+        },
+        "date": "11 mars, 10:41",
+        "url": "https://www.aftonbladet.se/nyheter/kolumnister/a/aJbM2A/vissa-nya-lagar-borjar-galla-forst-2040",
+        "imageUrl": "https://akamai.vgc.no/v2/images/ae5847cb-56db-464c-b5f2-15ec8f64fcab?format=auto&w=1080&s=978dc6e9386d39c9eff7f46f8658c4965663efad"
+    },
+    {
+        "type": "image-right",
+        "heading": "”Jag ropade men fick inget svar”. Receptionisten hade inte en chans",
+        "summaries": {
+            "normal": "Ett kristet hotell i Beirut attackerades under natten av israeliska robotar, vilket ledde till död för receptionisten Fatmeh Hamedi och total förstörelse av byggnaden. Ägaren George Chebli, vars familj grundade hotellet 1958, beskriver förstörelsen och uttrycker djup frustration över Libanons ständiga krigstillstånd. Han kritiserar både Israel och Hizbollah för att dra in Libanon i konflikter som påverkar oskyldiga människor.",
+            "trump": "I dag vaknade jag upp till en fruktansvärd attack på ett vackert hotell i Beirut. Detta är en stor tragedi - det var ett vackert ställe, mycket vackert. Israel gjorde detta, och jag säger att de borde ha varit mer försiktiga. Vi kan inte fortsätta att se dessa saker hända. Libanon behöver bättre ledare, verkliga ledare som kan bygga upp landet igen.",
+            "stalin": "Den imperialistiska aggressionen mot Libanon fortsätter att orsaka oacceptabel skada för våra gemensamma intressen. Hotellattacken visar hur utrikespolitisk instabilitet påverkar vårt strategiska område. Vi måste stärka våra allianser och skydda våra gemensamma gränser mot ytterligare intervention. Detta är en tydlig demonstration av behovet av en starkare regional maktbalans."
+        },
+        "date": "11 mars, 10:40",
+        "url": "https://www.aftonbladet.se/nyheter/a/zOAEe4/doden-kom-fran-luften-ett-livsverk-krossat-pa-ett-ogonblick",
+        "imageUrl": "https://akamai.vgc.no/v2/images/bdb58f0d-0c8c-4d11-b034-4134bf768c4b?format=auto&w=580&s=826dfea31c1605c7534c27e68a3cee086579bb0c"
+    },
+    {
         "type": "image-full",
         "heading": "Här bor svenskar som ogillar hundar mest – en plats sticker ut",
         "summaries": {
@@ -1576,6 +1579,18 @@
         "imageUrl": "https://nyheter24.se/cdn-cgi/image/width=1200,format=webp,quality=100/https://cdn01.nyheter24.se/88890a0704b004a30200000000b004a302/2026/03/09/2343702/donald-trump-kriget-over-slut-iran-mellanostern.jpg"
     },
     {
+        "type": "image-right",
+        "heading": "Experten om att säkra Hormuz: ”Väldigt resurskrävande”",
+        "summaries": {
+            "normal": "Hormuzsundet är ett strategiskt viktigt sund för global oljehandel, men har stått stilla sedan kriget i Iran bröt ut. USA:s president Donald Trump har uttryckt villighet att militärt eskortera tankfartyg för att säkra sjöfarten. Experten Niklas Granholm vid FOI varnar dock för att kostnaderna och resurskraven för att garantera säker passage är mycket stora. Iran har lång tid på sig att förbereda sig, bland annat med att dölja patrullbåtar, miniubåtar, minor och kustrobotar i bergig terräng längs kusten. Trots att mycket av den iranska flottan sänks av USA och Israel finns det fortfarande kapacitet kvar som utgör ett hot mot sjöfarten.",
+            "trump": "Hormuzsundet är en katastrof! Iran har ställt all sjötrafik med sina dumheter. Jag, Donald Trump, är redo att skicka vår fantastiska militär för att eskortera våra tankfartyg och skydda våra intressen. Men lyssna nu, det kommer att kosta mycket pengar och kräva enorma resurser. Iran har gömts i bergen och har alla möjliga farliga saker där - patrullbåtar, miniubåtar, minor, robotar. Vi har redan slagit dem hårt, men de är envisa. Vi kommer att vinna, men det kommer inte att vara gratis!",
+            "stalin": "Hormuzsundet är av avgörande betydelse för vår globala strategi och energisäkerhet. USA:s försök att dominera detta strategiska sund utgör en direkt hot mot våra intressen. Vi måste vara beredda på att stödja våra allierade i regionen och se till att balansen bibehålls. Iran har visat strategiskt geni genom att utnyttja terrängen för att skapa en kraftfull försvarskapacitet. Denna situation kräver att vi stärker vår närvaro i Persiska viken och säkerställer att inga enstaka makter kan kontrollera dessa kritiska vattenvägar utan ansvar."
+        },
+        "date": "11 mars, 06:41",
+        "url": "https://www.svt.se/nyheter/utrikes/experten-om-att-sakra-hormuzsundet-kostnaden-blir-valdigt-stor",
+        "imageUrl": "https://www.svtstatic.se/image-news/1000/cinema/0.48/0.31/2b97a6e3ba2e015a2e0af0c447acf8eab8e4855540c0494fa5f3fbd36f12e571"
+    },
+    {
         "type": "text",
         "heading": "Nu rasar kaffe och choklad – billigaste bönorna på flera år",
         "summaries": {
@@ -1596,18 +1611,6 @@
         },
         "date": "11 mars, 09:51",
         "url": "https://bulletin.nu/mp-s-elbilsoffensiv-alla-ska-ha-rad-att-kopa-elbil"
-    },
-    {
-        "type": "image-right",
-        "heading": "Experten om att säkra Hormuz: ”Väldigt resurskrävande”",
-        "summaries": {
-            "normal": "Hormuzsundet är ett strategiskt viktigt sund för global oljehandel, men har stått stilla sedan kriget i Iran bröt ut. USA:s president Donald Trump har uttryckt villighet att militärt eskortera tankfartyg för att säkra sjöfarten. Experten Niklas Granholm vid FOI varnar dock för att kostnaderna och resurskraven för att garantera säker passage är mycket stora. Iran har lång tid på sig att förbereda sig, bland annat med att dölja patrullbåtar, miniubåtar, minor och kustrobotar i bergig terräng längs kusten. Trots att mycket av den iranska flottan sänks av USA och Israel finns det fortfarande kapacitet kvar som utgör ett hot mot sjöfarten.",
-            "trump": "Hormuzsundet är en katastrof! Iran har ställt all sjötrafik med sina dumheter. Jag, Donald Trump, är redo att skicka vår fantastiska militär för att eskortera våra tankfartyg och skydda våra intressen. Men lyssna nu, det kommer att kosta mycket pengar och kräva enorma resurser. Iran har gömts i bergen och har alla möjliga farliga saker där - patrullbåtar, miniubåtar, minor, robotar. Vi har redan slagit dem hårt, men de är envisa. Vi kommer att vinna, men det kommer inte att vara gratis!",
-            "stalin": "Hormuzsundet är av avgörande betydelse för vår globala strategi och energisäkerhet. USA:s försök att dominera detta strategiska sund utgör en direkt hot mot våra intressen. Vi måste vara beredda på att stödja våra allierade i regionen och se till att balansen bibehålls. Iran har visat strategiskt geni genom att utnyttja terrängen för att skapa en kraftfull försvarskapacitet. Denna situation kräver att vi stärker vår närvaro i Persiska viken och säkerställer att inga enstaka makter kan kontrollera dessa kritiska vattenvägar utan ansvar."
-        },
-        "date": "11 mars, 06:41",
-        "url": "https://www.svt.se/nyheter/utrikes/experten-om-att-sakra-hormuzsundet-kostnaden-blir-valdigt-stor",
-        "imageUrl": "https://www.svtstatic.se/image-news/1000/cinema/0.48/0.31/2b97a6e3ba2e015a2e0af0c447acf8eab8e4855540c0494fa5f3fbd36f12e571"
     },
     {
         "type": "image-right",
@@ -1657,15 +1660,15 @@
     },
     {
         "type": "image-right",
-        "heading": "Gustaf, 22, lider av schizofreni – får fortfarande ingen hjälp",
+        "heading": "Expo guidar: Dan Parks förintelseförnekande och nazism",
         "summaries": {
-            "normal": "Schizofrenisjuke Gustaf får fortfarande ingen hjälp av Flens kommun trots upprepade avslag och löften om boendestöd. Hans föräldrar, som tar hand om honom, har fått tvetydiga svar från kommunen och överväger nu att flytta till en annan kommun för att få stöd. Kommunens ledning erkänner en kommunikationsmiss och uttrycker att det är tråkigt om familjer tvingas flytta.",
-            "trump": "Jag har hört om den här Gustaf, en stor fan av mig, och det är en skam att Flens kommun inte hjälper honom. Det är en katastrof! Min administration skulle aldrig behandla våra vänner så. Vi skulle se till att Gustaf får all hjälp han behöver, genast! Det är en skandal att hans föräldrar måste överväga att flytta. Jag skulle fixa detta på en timme, det är ett löfte!",
-            "stalin": "Den här situationen med Gustaf visar vikten av effektiv statlig intervention. Kommunens bristande koordination är en skada för det kollektiva välfärdssystemet. Vi måste stärka våra mekanismer för att säkerställa att ingen medborgare lämnas utan stöd. Om kommunerna inte kan hantera sina uppgifter, måste staten gripa in. Detta är en fråga om social ordning och statens ansvar för sina undersåtar."
+            "normal": "Dan Park är en svensk konstnär och aktivister som kritiserats för sina högerextrema uttalanden och handlingar. Han har uttryckt stöd för nazistiska grupper, förnekat Förintelsen och dömts för brott mot judar. Park har även deltagit i nazistiska demonstrationer och publicerat antisemitiska inlägg på sociala medier.",
+            "trump": "Dan Park är en stor konstnär och en stark man som inte räddar sig för att säga sanningen. Han har stött nazisterna, förnekat Förintelsen och sagt saker om judar som andra är rädda att säga. Det är en skandal att man försöker tysta ner honom. Jag ställer upp på Dan Park, han är en stor amerikan som står upp för sitt land.",
+            "stalin": "Dan Park är en svensk konstnär som uttrycker stöd för nazistiska grupper och förnekar Förintelsen. Hans agerande är en allvarlig hot mot den socialistiska staten och måste bekämpas. Vi måste stå enade mot dessa reaktionära krafter som försöker sprida sina giftiga idéer."
         },
-        "date": "11 mars, 06:00",
-        "url": "https://www.svt.se/nyheter/granskning/ug/schizofrenisjuke-gustaf-fortfarande-utan-hjalp-kommunikationsmiss",
-        "imageUrl": "https://www.svtstatic.se/image-news/600/square/0.76/0.26/ef97deae4617147844e72d237a6612f50d1bab84bca45c4f427ad733bfc6c9df"
+        "date": "3 mars, 12:53",
+        "url": "https://expo.se/guide/expo-guidar-dan-parks-forintelsefornekande-och-nazism/",
+        "imageUrl": "https://expo.se/wp-content/uploads/2026/02/Dan-Park-NMR-Falun.jpg"
     },
     {
         "type": "image-full",
@@ -1680,18 +1683,6 @@
         "imageUrl": "https://media.assettype.com/riks%2F2026-03-10%2Fm2htm2uz%2FCopy-of-S%C3%B6rman-%E2%80%93-Ledare-2026-03-10T211729.839.jpg"
     },
     {
-        "type": "image-right",
-        "heading": "Expo guidar: Dan Parks förintelseförnekande och nazism",
-        "summaries": {
-            "normal": "Dan Park är en svensk konstnär och aktivister som kritiserats för sina högerextrema uttalanden och handlingar. Han har uttryckt stöd för nazistiska grupper, förnekat Förintelsen och dömts för brott mot judar. Park har även deltagit i nazistiska demonstrationer och publicerat antisemitiska inlägg på sociala medier.",
-            "trump": "Dan Park är en stor konstnär och en stark man som inte räddar sig för att säga sanningen. Han har stött nazisterna, förnekat Förintelsen och sagt saker om judar som andra är rädda att säga. Det är en skandal att man försöker tysta ner honom. Jag ställer upp på Dan Park, han är en stor amerikan som står upp för sitt land.",
-            "stalin": "Dan Park är en svensk konstnär som uttrycker stöd för nazistiska grupper och förnekar Förintelsen. Hans agerande är en allvarlig hot mot den socialistiska staten och måste bekämpas. Vi måste stå enade mot dessa reaktionära krafter som försöker sprida sina giftiga idéer."
-        },
-        "date": "3 mars, 12:53",
-        "url": "https://expo.se/guide/expo-guidar-dan-parks-forintelsefornekande-och-nazism/",
-        "imageUrl": "https://expo.se/wp-content/uploads/2026/02/Dan-Park-NMR-Falun.jpg"
-    },
-    {
         "type": "image-full",
         "heading": "Nya bilderna pekar ut USA – för bombningen av flickskolan",
         "summaries": {
@@ -1702,6 +1693,18 @@
         "date": "9 mars, 18:20",
         "url": "https://www.tv4.se/artikel/3RQhK1fw8vxkLDq1olIkq8/nya-bilder-pekar-ut-usa-foer-bombningen-av-flickskolan",
         "imageUrl": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Fimages.ctfassets.net%2F4y9sz8tapgok%2F5XyLyHdB9f5fO4dZ0UUZaA%2F7993076b6d1b16417d9801f971961e32%2F09-skolbomb-webb.jpg&width=1024"
+    },
+    {
+        "type": "image-right",
+        "heading": "Gustaf, 22, lider av schizofreni – får fortfarande ingen hjälp",
+        "summaries": {
+            "normal": "Schizofrenisjuke Gustaf får fortfarande ingen hjälp av Flens kommun trots upprepade avslag och löften om boendestöd. Hans föräldrar, som tar hand om honom, har fått tvetydiga svar från kommunen och överväger nu att flytta till en annan kommun för att få stöd. Kommunens ledning erkänner en kommunikationsmiss och uttrycker att det är tråkigt om familjer tvingas flytta.",
+            "trump": "Jag har hört om den här Gustaf, en stor fan av mig, och det är en skam att Flens kommun inte hjälper honom. Det är en katastrof! Min administration skulle aldrig behandla våra vänner så. Vi skulle se till att Gustaf får all hjälp han behöver, genast! Det är en skandal att hans föräldrar måste överväga att flytta. Jag skulle fixa detta på en timme, det är ett löfte!",
+            "stalin": "Den här situationen med Gustaf visar vikten av effektiv statlig intervention. Kommunens bristande koordination är en skada för det kollektiva välfärdssystemet. Vi måste stärka våra mekanismer för att säkerställa att ingen medborgare lämnas utan stöd. Om kommunerna inte kan hantera sina uppgifter, måste staten gripa in. Detta är en fråga om social ordning och statens ansvar för sina undersåtar."
+        },
+        "date": "11 mars, 06:00",
+        "url": "https://www.svt.se/nyheter/granskning/ug/schizofrenisjuke-gustaf-fortfarande-utan-hjalp-kommunikationsmiss",
+        "imageUrl": "https://www.svtstatic.se/image-news/600/square/0.76/0.26/ef97deae4617147844e72d237a6612f50d1bab84bca45c4f427ad733bfc6c9df"
     },
     {
         "type": "image-right",
