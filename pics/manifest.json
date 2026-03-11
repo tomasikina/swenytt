@@ -1,0 +1,26 @@
+{
+  "name": "Svenska Nyheter",
+  "short_name": "Sv. Nyheter",
+  "description": "Sammanfattade nyheter från hela det politiska spektrat.",
+  "start_url": "/swenytt/index.html",
+  "scope": "/swenytt/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B0000",
+  "lang": "sv",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/swenytt/pics/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/swenytt/pics/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
