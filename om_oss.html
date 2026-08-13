@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="pics/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="pics/favicon.svg">
+<link rel="shortcut icon" href="pics/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon.png">
+<meta name="theme-color" content="#8B0000">
+<title>Om oss, integritetspolicy och kontakt | Svenska Nyheter</title>
+<meta name="description" content="Läs om hur Svenska Nyheter fungerar, hur vi hanterar personuppgifter och hur du kontaktar oss.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --body-bg: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+        --header-bg: rgba(255, 255, 255, 0.95);
+        --header-border: rgba(139, 0, 0, 0.10);
+        --main-bg: white;
+        --main-shadow: rgba(0, 0, 0, 0.08);
+        --card-bg: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+        --card-border: rgba(139, 0, 0, 0.08);
+        --card-hover-shadow: rgba(139, 0, 0, 0.12);
+        --text-primary: #1a1a1a;
+        --text-secondary: #4a5568;
+        --text-meta: #718096;
+        --link-color: #8B0000;
+        --link-hover: #DC143C;
+        --footer-bg: #e2e8f0;
+        --footer-text: #4a5568;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: var(--body-bg);
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 90px;
+        background: var(--header-bg);
+        backdrop-filter: blur(20px);
+        z-index: 50;
+        border-bottom: 1px solid var(--header-border);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.25rem;
+        font-weight: 900;
+        white-space: nowrap;
+        background: linear-gradient(135deg, #8B0000 0%, #DC143C 50%, #FF0000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.5px;
+        animation: fadeInDown 0.6s ease-out;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Outer frame - mirrors <main> on index.html exactly */
+    main {
+        max-width: 800px;
+        width: 100%;
+        margin: 100px auto 40px;
+        background: var(--main-bg);
+        border-radius: 16px;
+        box-shadow: 0 10px 40px var(--main-shadow);
+        padding: 16px;
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 0.8s ease-out;
+        flex: 1;
+    }
+
+    .back-link-top {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.92rem;
+        margin-bottom: 12px;
+        padding: 0 4px;
+    }
+
+    .back-link-top:hover {
+        color: var(--link-hover);
+    }
+
+    /* Inner container - mirrors .news-container on index.html */
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* Inner card - mirrors .news-item on index.html */
+    .info-card {
+        padding: 10px 22px;
+        border-radius: 10px;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .info-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #8B0000 0%, #DC143C 100%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px var(--card-hover-shadow);
+        border-color: rgba(139, 0, 0, 0.15);
+    }
+
+    .info-card:hover::before {
+        opacity: 1;
+    }
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+    }
+
+    h3 {
+        font-size: 1.05em;
+        color: var(--text-primary);
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 12px;
+        font-size: 0.92rem;
+    }
+
+    a {
+        color: var(--link-color);
+    }
+
+    a:hover {
+        color: var(--link-hover);
+    }
+
+    .highlight-box {
+        background-color: rgba(139, 0, 0, 0.05);
+        border-left: 4px solid var(--link-color);
+        padding: 14px 18px;
+        margin: 16px 0;
+        border-radius: 8px;
+        font-size: 0.90rem;
+        color: var(--text-secondary);
+    }
+
+    footer {
+        background-color: var(--footer-bg);
+        color: var(--footer-text);
+        padding: 30px 0;
+        margin-top: auto;
+        border-top: 1px solid var(--header-border);
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 600;
+        flex-wrap: wrap;
+    }
+
+    .footer-content a {
+        color: var(--text-secondary);
+        text-decoration: none;
+    }
+
+    .footer-content a:hover {
+        color: var(--link-color);
+        text-decoration: underline;
+    }
+
+    .footer-separator {
+        color: var(--text-meta);
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.7rem;
+        }
+        main {
+            margin: 100px 0 40px;
+            padding: 14px;
+            border-radius: 0;
+            width: 100%;
+        }
+        .info-card {
+            padding: 7px 14px;
+            border-radius: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Svenska Nyheter</h1>
+</header>
+
+<main>
+    <a href="index.html" class="back-link-top">&larr; Tillbaka till startsidan</a>
+
+    <div class="info-container">
+
+        <article class="info-card">
+            <h2>Om oss</h2>
+
+            <p>
+                Svenska Nyheter är en automatiserad nyhetstjänst som samlar och sammanfattar
+                nyheter från ett flertal svenska medier, för att ge läsare en snabb och
+                lättillgänglig överblick av det aktuella nyhetsläget.
+            </p>
+
+            <h3>Bredd över hela det politiska spektrat</h3>
+            <p>
+                Sajten bevakar ett flertal svenska nyhetsmedier inom politik, ekonomi
+                och samhälle, och presenterar nyheter över hela det politiska
+                spektrat. Syftet är att ge läsare möjlighet att ta del av nyheter som
+                de annars kanske aldrig skulle se, eftersom människor ofta befinner
+                sig i informationsbubblor genom att endast ta del av nyheter med en
+                viss vinkling.
+            </p>
+
+            <h3>Hur fungerar sajten?</h3>
+            <p>
+                Sajten hämtar automatiskt nyhetsartiklar från de källor som bevakas,
+                via deras publika RSS-flöden eller webbsidor. Varje artikel
+                sammanfattas därefter med hjälp av AI-språkmodeller för att ge
+                läsaren en kort och koncis version av innehållet. <strong>Varje
+                sammanfattning länkar alltid till originalartikeln</strong> hos den
+                ursprungliga nyhetskällan, där läsaren kan läsa hela artikeln i sin
+                helhet.
+            </p>
+
+            <p>
+                Ambitionen är att endast länka till nyheter som är öppna och
+                tillgängliga för alla läsare. Om en artikel låses bakom en betalvägg
+                efter att den har lagts till på sajten, tas länken till den artikeln
+                bort.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Transparens:</strong> Svenska Nyheter skriver inte egen
+                journalistik och gör inte anspråk på att vara den ursprungliga
+                källan till någon nyhet. Vårt syfte är att fungera som en
+                översiktlig samlingsplats som hjälper läsare att snabbt orientera
+                sig bland nyheter från flera källor och perspektiv på ett och samma
+                ställe.
+            </div>
+
+            <h3>Hur sorteras nyheterna?</h3>
+            <p>
+                Nyheterna presenteras inte i strikt kronologisk ordning. Sajten
+                använder algoritmer som gör att nyhetskällor som publicerar mer
+                sällan ändå lyfts fram, så att de inte riskerar att hamna långt ner
+                på sidan under stora delar av tiden. Det innebär att Svenska Nyheter
+                sällan är allra först med en nyhet, men att sajten istället erbjuder
+                störst bredd bland de nyheter som presenteras.
+            </p>
+
+            <h3>Olika perspektiv på samma nyhet</h3>
+            <p>
+                Utöver att presentera nyheter från tidningar med olika politiska
+                inriktningar, summeras artiklarna även ur olika perspektiv. På så
+                sätt kan läsaren själv få en uppfattning om hur en och samma nyhet
+                kan sammanfattas på mycket olika sätt beroende på vilket perspektiv
+                som anläggs.
+            </p>
+
+            <h3>Hur ofta uppdateras sajten?</h3>
+            <p>
+                Nyhetsflödet kontrolleras automatiskt flera gånger per dygn, så att nya
+                artiklar publiceras på sajten så snart som möjligt efter att de
+                har publicerats av originalkällan.
+            </p>
+
+            <h3>Politisk oberoende</h3>
+            <p>
+                Svenska Nyheter har ingen egen politisk inriktning och det finns inga
+                som helst politiska kopplingar till något parti eller någon
+                specifik ideologi. Ambitionen med sajten är att underlätta för
+                besökare att hitta nyheter med olika perspektiv, samt att driva
+                trafik till de nyhetskällor som publicerar nyheter som läsarna
+                visar intresse för.
+            </p>
+
+            <p>
+                Sammanfattningarna hålls medvetet korta, endast några meningar,
+                så att läsare som tycker att en nyhet verkar intressant själva
+                vill klicka sig vidare till originalartikeln för att läsa hela
+                nyheten hos den ursprungliga källan.
+            </p>
+
+            <h3>Ansvarig för sajten</h3>
+            <p>
+                Svenska Nyheter drivs och underhålls av en privatperson med intresse för
+                demokrati, yttrandefrihet, och svensk samhällsdebatt.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <h2>Integritetspolicy</h2>
+
+            <p>
+                Denna integritetspolicy förklarar hur Svenska Nyheter hanterar
+                personuppgifter och vilka cookies som används vid besök på sajten.
+            </p>
+
+            <h3>Cookies</h3>
+            <p>
+                Sajten kan använda cookies för att förbättra användarupplevelsen samt
+                för att visa relevanta annonser. Vi använder tredjepartstjänster,
+                till exempel Google AdSense, som kan placera cookies i din webbläsare
+                för att visa personanpassad eller icke-personanpassad reklam.
+                Google kan använda cookies för att visa annonser baserat på dina
+                tidigare besök på denna och andra webbplatser.
+            </p>
+
+            <h3>Google AdSense och tredjepartsannonsering</h3>
+            <p>
+                Vi använder, eller avser att använda, Google AdSense för att visa
+                annonser på sajten. Google och dess partners kan använda cookies för
+                att visa annonser baserat på användarens tidigare besök på denna
+                webbplats eller andra webbplatser. Du kan välja bort personanpassad
+                annonsering genom att besöka
+                <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Googles annonsinställningar</a>.
+            </p>
+
+            <h3>Vilka uppgifter samlas in?</h3>
+            <p>
+                Vi samlar själva inte in några personuppgifter från besökare, förutom
+                vad som eventuellt sker automatiskt via cookies från tredjepartstjänster
+                som beskrivs ovan. Om du kontaktar oss via e-post behandlas dina
+                uppgifter (namn, e-postadress, meddelande) enbart i syfte att besvara
+                din fråga, och sparas inte längre än nödvändigt.
+            </p>
+
+            <h3>Länkar till externa webbplatser</h3>
+            <p>
+                Sajten innehåller länkar till externa nyhetskällor. Vi ansvarar inte
+                för innehållet eller integritetspraxis på dessa externa webbplatser.
+                Vi rekommenderar att du läser respektive webbplats egen
+                integritetspolicy.
+            </p>
+
+            <h3>Ändringar av denna policy</h3>
+            <p>
+                Denna integritetspolicy kan uppdateras vid behov. Eventuella ändringar
+                publiceras på denna sida.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <h2>Kontakt</h2>
+
+            <p>
+                Har du frågor, synpunkter eller vill rapportera ett problem med sajten?
+                Hör av dig till oss via e-post:
+            </p>
+
+            <p>
+                <strong>E-post:</strong>
+                <a href="mailto:kontakt@svenskanyheter.nu">kontakt@svenskanyheter.nu</a>
+            </p>
+
+            <p>
+                Vi strävar efter att besvara alla meddelanden inom några arbetsdagar.
+            </p>
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <a href="index.html">&larr; Tillbaka till startsidan</a>
+        <span class="footer-separator">|</span>
+        <a href="mailto:kontakt@svenskanyheter.nu">kontakt@svenskanyheter.nu</a>
+    </div>
+</footer>
+
+</body>
+</html>
